@@ -1,0 +1,139 @@
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\App.xbf
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\MainPage.xbf
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\App1.exe
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\App1.pdb
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\resources.pri
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\AppxManifest.xml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\App1.build.appxrecipe
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App.g.i.cs
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App.g.cs
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\MainPage.g.i.cs
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\MainPage.g.cs
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App.xaml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\MainPage.xaml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App.xbf
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\MainPage.xbf
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\XamlSaveStateFile.xml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App1.exe
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App1.pdb
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App1.csproj.GenerateResource.Cache
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\priconfig.xml
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\priconfig.xml.intermediate
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\layout.resfiles
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\layout.resfiles.intermediate
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\resources.resfiles
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\resources.resfiles.intermediate
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\pri.resfiles
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\pri.resfiles.intermediate
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\qualifiers.txt
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\qualifiers.txt.intermediate
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\ProjectArchitectures.txt
+C:\Users\MARKOLUKA\Documents\Visual Studio 2013\Projects\App1\App1\obj\Debug\App1.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\App1\App1\bin\Debug\App.xbf
+C:\Users\student\Desktop\App1\App1\bin\Debug\MainPage.xbf
+C:\Users\student\Desktop\App1\App1\bin\Debug\App1.exe
+C:\Users\student\Desktop\App1\App1\bin\Debug\App1.pdb
+C:\Users\student\Desktop\App1\App1\bin\Debug\resources.pri
+C:\Users\student\Desktop\App1\App1\bin\Debug\AppxManifest.xml
+C:\Users\student\Desktop\App1\App1\bin\Debug\App1.build.appxrecipe
+C:\Users\student\Desktop\App1\App1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\App1\App1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\student\Desktop\App1\App1\obj\Debug\App.g.i.cs
+C:\Users\student\Desktop\App1\App1\obj\Debug\App.g.cs
+C:\Users\student\Desktop\App1\App1\obj\Debug\MainPage.g.i.cs
+C:\Users\student\Desktop\App1\App1\obj\Debug\MainPage.g.cs
+C:\Users\student\Desktop\App1\App1\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\student\Desktop\App1\App1\obj\Debug\App.xaml
+C:\Users\student\Desktop\App1\App1\obj\Debug\MainPage.xaml
+C:\Users\student\Desktop\App1\App1\obj\Debug\App.xbf
+C:\Users\student\Desktop\App1\App1\obj\Debug\MainPage.xbf
+C:\Users\student\Desktop\App1\App1\obj\Debug\XamlSaveStateFile.xml
+C:\Users\student\Desktop\App1\App1\obj\Debug\App1.exe
+C:\Users\student\Desktop\App1\App1\obj\Debug\App1.pdb
+C:\Users\student\Desktop\App1\App1\obj\Debug\App1.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\App1\App1\obj\Debug\priconfig.xml
+C:\Users\student\Desktop\App1\App1\obj\Debug\priconfig.xml.intermediate
+C:\Users\student\Desktop\App1\App1\obj\Debug\layout.resfiles
+C:\Users\student\Desktop\App1\App1\obj\Debug\layout.resfiles.intermediate
+C:\Users\student\Desktop\App1\App1\obj\Debug\resources.resfiles
+C:\Users\student\Desktop\App1\App1\obj\Debug\resources.resfiles.intermediate
+C:\Users\student\Desktop\App1\App1\obj\Debug\pri.resfiles
+C:\Users\student\Desktop\App1\App1\obj\Debug\pri.resfiles.intermediate
+C:\Users\student\Desktop\App1\App1\obj\Debug\qualifiers.txt
+C:\Users\student\Desktop\App1\App1\obj\Debug\qualifiers.txt.intermediate
+C:\Users\student\Desktop\App1\App1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\student\Desktop\App1\App1\obj\Debug\ProjectArchitectures.txt
+C:\Users\student\Desktop\App1\App1\obj\Debug\App1.csprojResolveAssemblyReference.cache
+H:\aplikacija brej\App1\App1\bin\Debug\App.xbf
+H:\aplikacija brej\App1\App1\bin\Debug\MainPage.xbf
+H:\aplikacija brej\App1\App1\bin\Debug\App1.exe
+H:\aplikacija brej\App1\App1\bin\Debug\App1.pdb
+H:\aplikacija brej\App1\App1\bin\Debug\resources.pri
+H:\aplikacija brej\App1\App1\bin\Debug\AppxManifest.xml
+H:\aplikacija brej\App1\App1\bin\Debug\App1.build.appxrecipe
+H:\aplikacija brej\App1\App1\bin\Debug\Newtonsoft.Json.dll
+H:\aplikacija brej\App1\App1\bin\Debug\Newtonsoft.Json.xml
+H:\aplikacija brej\App1\App1\obj\Debug\App.g.i.cs
+H:\aplikacija brej\App1\App1\obj\Debug\App.g.cs
+H:\aplikacija brej\App1\App1\obj\Debug\MainPage.g.i.cs
+H:\aplikacija brej\App1\App1\obj\Debug\MainPage.g.cs
+H:\aplikacija brej\App1\App1\obj\Debug\XamlTypeInfo.g.cs
+H:\aplikacija brej\App1\App1\obj\Debug\App.xaml
+H:\aplikacija brej\App1\App1\obj\Debug\MainPage.xaml
+H:\aplikacija brej\App1\App1\obj\Debug\App.xbf
+H:\aplikacija brej\App1\App1\obj\Debug\MainPage.xbf
+H:\aplikacija brej\App1\App1\obj\Debug\XamlSaveStateFile.xml
+H:\aplikacija brej\App1\App1\obj\Debug\App1.exe
+H:\aplikacija brej\App1\App1\obj\Debug\App1.pdb
+H:\aplikacija brej\App1\App1\obj\Debug\App1.csproj.GenerateResource.Cache
+H:\aplikacija brej\App1\App1\obj\Debug\priconfig.xml
+H:\aplikacija brej\App1\App1\obj\Debug\priconfig.xml.intermediate
+H:\aplikacija brej\App1\App1\obj\Debug\layout.resfiles
+H:\aplikacija brej\App1\App1\obj\Debug\layout.resfiles.intermediate
+H:\aplikacija brej\App1\App1\obj\Debug\resources.resfiles
+H:\aplikacija brej\App1\App1\obj\Debug\resources.resfiles.intermediate
+H:\aplikacija brej\App1\App1\obj\Debug\pri.resfiles
+H:\aplikacija brej\App1\App1\obj\Debug\pri.resfiles.intermediate
+H:\aplikacija brej\App1\App1\obj\Debug\qualifiers.txt
+H:\aplikacija brej\App1\App1\obj\Debug\qualifiers.txt.intermediate
+H:\aplikacija brej\App1\App1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+H:\aplikacija brej\App1\App1\obj\Debug\ProjectArchitectures.txt
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App.xbf
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\MainPage.xbf
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App1.exe
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App1.pdb
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\resources.pri
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\AppxManifest.xml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App1.build.appxrecipe
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App1.csprojResolveAssemblyReference.cache
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App.g.i.cs
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App.g.cs
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\MainPage.g.i.cs
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\MainPage.g.cs
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App.xaml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\MainPage.xaml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App.xbf
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\MainPage.xbf
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\XamlSaveStateFile.xml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App1.exe
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App1.pdb
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\App1.csproj.GenerateResource.Cache
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\priconfig.xml
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\priconfig.xml.intermediate
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\layout.resfiles
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\layout.resfiles.intermediate
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\resources.resfiles
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\resources.resfiles.intermediate
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\pri.resfiles
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\pri.resfiles.intermediate
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\qualifiers.txt
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\qualifiers.txt.intermediate
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\obj\Debug\ProjectArchitectures.txt

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49C498F3-2B35-495E-B511-AAB35B8E698D}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App1</RootNamespace>
+    <AssemblyName>App1</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>App1_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>A82CDC278CD511D92CCD9A1F5EEA7B9D44C4DD9E</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\data.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="App1_StoreKey.pfx" />
+    <None Include="App1_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Square70x70Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Images\Arhitektonski fakultet\1.png" />
+    <Content Include="Images\Arhitektonski fakultet\2.jpg" />
+    <Content Include="Images\Arhitektonski fakultet\3.jpg" />
+    <Content Include="Images\Beogradska politehnika - visoka škola strukovnih studija\1.jpg" />
+    <Content Include="Images\Beogradska politehnika - visoka škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Beogradska politehnika - visoka škola strukovnih studija\3.jpg" />
+    <Content Include="Images\Beogradska poslovna škola strukovnih studija\1.jpg" />
+    <Content Include="Images\Beogradska poslovna škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Beogradska poslovna škola strukovnih studija\3.jpg" />
+    <Content Include="Images\Biološki fakultet\1.png" />
+    <Content Include="Images\Biološki fakultet\2.jpg" />
+    <Content Include="Images\Biološki fakultet\3.jpg" />
+    <Content Include="Images\Biološki fakultet\4.jpg" />
+    <Content Include="Images\Ekonomski fakultet\1.png" />
+    <Content Include="Images\Ekonomski fakultet\2.jpg" />
+    <Content Include="Images\Ekonomski fakultet\3.jpg" />
+    <Content Include="Images\Elektrotehnički fakultet\1.png" />
+    <Content Include="Images\Elektrotehnički fakultet\2.jpg" />
+    <Content Include="Images\Elektrotehnički fakultet\3.jpg" />
+    <Content Include="Images\Fakultet bezbednosti\1.png" />
+    <Content Include="Images\Fakultet bezbednosti\2.jpg" />
+    <Content Include="Images\Fakultet bezbednosti\3.jpg" />
+    <Content Include="Images\Fakultet bezbednosti\4.jpg" />
+    <Content Include="Images\Fakultet organizacionih nauka\1.png" />
+    <Content Include="Images\Fakultet organizacionih nauka\2.jpg" />
+    <Content Include="Images\Fakultet organizacionih nauka\3.jpg" />
+    <Content Include="Images\Fakultet organizacionih nauka\4.jpg" />
+    <Content Include="Images\Fakultet političkih nauka\1.png" />
+    <Content Include="Images\Fakultet političkih nauka\2.jpg" />
+    <Content Include="Images\Fakultet političkih nauka\3.jpg" />
+    <Content Include="Images\Fakultet sporta i fizičkog vaspitanja\1.png" />
+    <Content Include="Images\Fakultet sporta i fizičkog vaspitanja\2.jpg" />
+    <Content Include="Images\Fakultet sporta i fizičkog vaspitanja\3.jpg" />
+    <Content Include="Images\Fakultet veterinarske medicine\1.png" />
+    <Content Include="Images\Fakultet veterinarske medicine\2.jpg" />
+    <Content Include="Images\Fakultet veterinarske medicine\3.jpg" />
+    <Content Include="Images\Fakultet veterinarske medicine\4.jpg" />
+    <Content Include="Images\Fakultet veterinarske medicine\5.jpg" />
+    <Content Include="Images\Fakultet za fizičku hemiju\1.png" />
+    <Content Include="Images\Fakultet za fizičku hemiju\2.jpg" />
+    <Content Include="Images\Fakultet za specijalnu edukaciju i rehabilitaciju\1.png" />
+    <Content Include="Images\Fakultet za specijalnu edukaciju i rehabilitaciju\2.jpg" />
+    <Content Include="Images\Fakultet za specijalnu edukaciju i rehabilitaciju\3.png" />
+    <Content Include="Images\Farmaceutski fakultet\1.png" />
+    <Content Include="Images\Farmaceutski fakultet\2.jpg" />
+    <Content Include="Images\Farmaceutski fakultet\3.jpg" />
+    <Content Include="Images\Filološki fakultet\1.png" />
+    <Content Include="Images\Filološki fakultet\2.jpg" />
+    <Content Include="Images\Filološki fakultet\3.jpg" />
+    <Content Include="Images\Filozofski fakultet\1.png" />
+    <Content Include="Images\Filozofski fakultet\2.jpg" />
+    <Content Include="Images\Filozofski fakultet\3.jpg" />
+    <Content Include="Images\Fizički fakultet\1.png" />
+    <Content Include="Images\Fizički fakultet\2.jpg" />
+    <Content Include="Images\Fizički fakultet\3.jpg" />
+    <Content Include="Images\Fizički fakultet\4.jpg" />
+    <Content Include="Images\Građevinski fakultet\1.png" />
+    <Content Include="Images\Građevinski fakultet\2.jpg" />
+    <Content Include="Images\Građevinski fakultet\3.jpg" />
+    <Content Include="Images\Hemijski fakultet\1.png" />
+    <Content Include="Images\Hemijski fakultet\2.jpg" />
+    <Content Include="Images\Hemijski fakultet\3.jpg" />
+    <Content Include="Images\Hemijski fakultet\4.jpg" />
+    <Content Include="Images\Mašinski fakultet\1.png" />
+    <Content Include="Images\Mašinski fakultet\2.jpg" />
+    <Content Include="Images\Mašinski fakultet\3.jpg" />
+    <Content Include="Images\Medicinski fakultet\1.png" />
+    <Content Include="Images\Medicinski fakultet\2.jpg" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\Poljoprivredni fakultet\1.png" />
+    <Content Include="Images\Poljoprivredni fakultet\2.jpg" />
+    <Content Include="Images\Poljoprivredni fakultet\3.jpg" />
+    <Content Include="Images\Pravni fakultet\1.png" />
+    <Content Include="Images\Pravni fakultet\2.jpg" />
+    <Content Include="Images\Pravoslavni bogoslovski fakultet\1.png" />
+    <Content Include="Images\Pravoslavni bogoslovski fakultet\2.jpg" />
+    <Content Include="Images\Pravoslavni bogoslovski fakultet\3.jpg" />
+    <Content Include="Images\Rudarsko-geološki fakultet\1.png" />
+    <Content Include="Images\Rudarsko-geološki fakultet\2.jpg" />
+    <Content Include="Images\Saobraćajni fakultet\1.png" />
+    <Content Include="Images\Saobraćajni fakultet\2.jpg" />
+    <Content Include="Images\Stomatološki fakultet\1.png" />
+    <Content Include="Images\Stomatološki fakultet\2.jpg" />
+    <Content Include="Images\Tehnički fakultet u Boru\1.png" />
+    <Content Include="Images\Tehnički fakultet u Boru\2.jpg" />
+    <Content Include="Images\Tehnološko-metalurški fakultet\1.png" />
+    <Content Include="Images\Tehnološko-metalurški fakultet\2.jpg" />
+    <Content Include="Images\Tehnološko-metalurški fakultet\3.jpg" />
+    <Content Include="Images\Učiteljski fakultet\1.png" />
+    <Content Include="Images\Visoka građevinsko-geodetska škola strukovnih studija\1.png" />
+    <Content Include="Images\Visoka građevinsko-geodetska škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka hotelijerska škola strukovnih studija\1.png" />
+    <Content Include="Images\Visoka hotelijerska škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka hotelijerska škola strukovnih studija\3.jpg" />
+    <Content Include="Images\Visoka inženjerska škola strukovnih studija\1.jpg" />
+    <Content Include="Images\Visoka tehnička škola strukovnih studija\1.jpg" />
+    <Content Include="Images\Visoka tehnička škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka tehnička škola strukovnih studija\3.jpg" />
+    <Content Include="Images\Visoka tekstilna strukovna škola za dizajn, tehnologiju i menadžment\1.jpg" />
+    <Content Include="Images\Visoka turistička škola strukovnih studija\1.gif" />
+    <Content Include="Images\Visoka turistička škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka turistička škola strukovnih studija\3.jpg" />
+    <Content Include="Images\Visoka zdravstvena škola strukovnih studija\1.gif" />
+    <Content Include="Images\Visoka zdravstvena škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka škola elektrotehnike i računarstva strukovnih studija\1.jpg" />
+    <Content Include="Images\Visoka škola elektrotehnike i računarstva strukovnih studija\2.jpg" />
+    <Content Include="Images\Visoka škola elektrotehnike i računarstva strukovnih studija\3.jpg" />
+    <Content Include="Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\1.jpg" />
+    <Content Include="Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\2.jpg" />
+    <Content Include="Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\3.jpg" />
+    <Content Include="Images\Visoka železnička škola strukovnih studija\1.jpg" />
+    <Content Include="Images\Visoka železnička škola strukovnih studija\2.jpg" />
+    <Content Include="Images\Šumarski fakultet\1.png" />
+    <Content Include="Images\Šumarski fakultet\2.jpg" />
+    <Content Include="Images\Šumarski fakultet\3.jpg" />
+    <Content Include="Images\Šumarski fakultet\4.jpg" />
+    <Content Include="Images\Šumarski fakultet\5.jpg" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="ViewModel\aaa.txt" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

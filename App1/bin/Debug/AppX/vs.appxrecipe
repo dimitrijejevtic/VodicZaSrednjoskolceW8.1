@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MARKOLUKA-PC</Machine>
+    <WindowsUser>MARKOLUKA</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>21805markostakic.Vodizastudente</PackageIdentityName>
+    <RegisteredManifestChecksum>9F766B355533656E56CBEC735658425CAC8466BBC3BBD7AFF86B3AF4926725D4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>21805markostakic.Vodizastudente_1.1.0.1_neutral__fxvasns6ar64c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>21805markostakic.Vodizastudente_fxvasns6ar64c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>21805markostakic.Vodizastudente</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=321CB149-67BD-4D1F-A78B-2B84DEB614DE</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.1</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-26T20:56:51.294</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App1.exe">
+      <PackagePath>App1.exe</PackagePath>
+      <Modified>2014-03-26T20:56:46.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2014-03-03T17:39:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-21T12:38:09.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <Modified>2014-03-15T10:30:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Arhitektonski fakultet\1.png">
+      <PackagePath>Images\Arhitektonski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Biološki fakultet\1.png">
+      <PackagePath>Images\Biološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:35:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Ekonomski fakultet\1.png">
+      <PackagePath>Images\Ekonomski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:11:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Elektrotehnički fakultet\1.png">
+      <PackagePath>Images\Elektrotehnički fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:58:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet bezbednosti\1.png">
+      <PackagePath>Images\Fakultet bezbednosti\1.png</PackagePath>
+      <Modified>2014-03-15T09:11:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet organizacionih nauka\1.png">
+      <PackagePath>Images\Fakultet organizacionih nauka\1.png</PackagePath>
+      <Modified>2014-03-15T09:19:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet političkih nauka\1.png">
+      <PackagePath>Images\Fakultet političkih nauka\1.png</PackagePath>
+      <Modified>2014-03-15T09:15:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet sporta i fizičkog vaspitanja\1.png">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\1.png</PackagePath>
+      <Modified>2014-03-15T09:17:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet veterinarske medicine\1.png">
+      <PackagePath>Images\Fakultet veterinarske medicine\1.png</PackagePath>
+      <Modified>2014-03-15T10:07:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet za fizičku hemiju\1.png">
+      <PackagePath>Images\Fakultet za fizičku hemiju\1.png</PackagePath>
+      <Modified>2014-03-15T08:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\1.png">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\1.png</PackagePath>
+      <Modified>2014-03-15T09:14:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\3.png">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\3.png</PackagePath>
+      <Modified>2014-03-15T10:55:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Farmaceutski fakultet\1.png">
+      <PackagePath>Images\Farmaceutski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:03:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filološki fakultet\1.png">
+      <PackagePath>Images\Filološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:21:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filozofski fakultet\1.png">
+      <PackagePath>Images\Filozofski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:18:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fizički fakultet\1.png">
+      <PackagePath>Images\Fizički fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:51:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Građevinski fakultet\1.png">
+      <PackagePath>Images\Građevinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:57:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Hemijski fakultet\1.png">
+      <PackagePath>Images\Hemijski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:54:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Mašinski fakultet\1.png">
+      <PackagePath>Images\Mašinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T08:58:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Medicinski fakultet\1.png">
+      <PackagePath>Images\Medicinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:00:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\1.png">
+      <PackagePath>Images\1.png</PackagePath>
+      <Modified>2014-03-21T13:05:55.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Poljoprivredni fakultet\1.png">
+      <PackagePath>Images\Poljoprivredni fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:01:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Pravni fakultet\1.png">
+      <PackagePath>Images\Pravni fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:14:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Pravoslavni bogoslovski fakultet\1.png">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:16:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Rudarsko-geološki fakultet\1.png">
+      <PackagePath>Images\Rudarsko-geološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:11:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Saobraćajni fakultet\1.png">
+      <PackagePath>Images\Saobraćajni fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:13:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Stomatološki fakultet\1.png">
+      <PackagePath>Images\Stomatološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T10:05:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Tehnički fakultet u Boru\1.png">
+      <PackagePath>Images\Tehnički fakultet u Boru\1.png</PackagePath>
+      <Modified>2014-03-15T09:14:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Tehnološko-metalurški fakultet\1.png">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:16:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Učiteljski fakultet\1.png">
+      <PackagePath>Images\Učiteljski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:10:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka građevinsko-geodetska škola strukovnih studija\1.png">
+      <PackagePath>Images\Visoka građevinsko-geodetska škola strukovnih studija\1.png</PackagePath>
+      <Modified>2014-03-15T09:57:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka hotelijerska škola strukovnih studija\1.png">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\1.png</PackagePath>
+      <Modified>2014-03-15T10:02:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Šumarski fakultet\1.png">
+      <PackagePath>Images\Šumarski fakultet\1.png</PackagePath>
+      <Modified>2014-03-15T09:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-21T12:50:51.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-21T12:43:45.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Arhitektonski fakultet\2.jpg">
+      <PackagePath>Images\Arhitektonski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:01:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Arhitektonski fakultet\3.jpg">
+      <PackagePath>Images\Arhitektonski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:03:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:23:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:04:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:04:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska poslovna škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska poslovna škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:18:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Beogradska poslovna škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:19:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Biološki fakultet\2.jpg">
+      <PackagePath>Images\Biološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:43:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Biološki fakultet\3.jpg">
+      <PackagePath>Images\Biološki fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T10:46:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Biološki fakultet\4.jpg">
+      <PackagePath>Images\Biološki fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-15T10:43:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Ekonomski fakultet\2.jpg">
+      <PackagePath>Images\Ekonomski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:11:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Ekonomski fakultet\3.jpg">
+      <PackagePath>Images\Ekonomski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T12:24:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Elektrotehnički fakultet\2.jpg">
+      <PackagePath>Images\Elektrotehnički fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:06:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Elektrotehnički fakultet\3.jpg">
+      <PackagePath>Images\Elektrotehnički fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:07:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet bezbednosti\2.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:12:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet bezbednosti\3.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:12:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet bezbednosti\4.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\4.jpg</PackagePath>
+      <Modified>2014-03-15T09:13:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet organizacionih nauka\2.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:20:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet organizacionih nauka\3.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:26:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet organizacionih nauka\4.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\4.jpg</PackagePath>
+      <Modified>2014-03-15T09:28:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet političkih nauka\2.jpg">
+      <PackagePath>Images\Fakultet političkih nauka\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet političkih nauka\3.jpg">
+      <PackagePath>Images\Fakultet političkih nauka\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:16:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet sporta i fizičkog vaspitanja\2.jpg">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:59:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet sporta i fizičkog vaspitanja\3.jpg">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:01:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet veterinarske medicine\2.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:07:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet veterinarske medicine\3.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:25:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet veterinarske medicine\4.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\4.jpg</PackagePath>
+      <Modified>2014-03-15T11:26:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet veterinarske medicine\5.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\5.jpg</PackagePath>
+      <Modified>2014-03-15T11:27:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet za fizičku hemiju\2.jpg">
+      <PackagePath>Images\Fakultet za fizičku hemiju\2.jpg</PackagePath>
+      <Modified>2014-03-15T08:49:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\2.jpg">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:14:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Farmaceutski fakultet\2.jpg">
+      <PackagePath>Images\Farmaceutski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:04:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Farmaceutski fakultet\3.jpg">
+      <PackagePath>Images\Farmaceutski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filološki fakultet\2.jpg">
+      <PackagePath>Images\Filološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:21:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filološki fakultet\3.jpg">
+      <PackagePath>Images\Filološki fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:21:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filozofski fakultet\2.jpg">
+      <PackagePath>Images\Filozofski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:18:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Filozofski fakultet\3.jpg">
+      <PackagePath>Images\Filozofski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:19:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fizički fakultet\2.jpg">
+      <PackagePath>Images\Fizički fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:51:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fizički fakultet\3.jpg">
+      <PackagePath>Images\Fizički fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T10:52:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Fizički fakultet\4.jpg">
+      <PackagePath>Images\Fizički fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-15T10:52:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Građevinski fakultet\2.jpg">
+      <PackagePath>Images\Građevinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:04:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Građevinski fakultet\3.jpg">
+      <PackagePath>Images\Građevinski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:05:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Hemijski fakultet\2.jpg">
+      <PackagePath>Images\Hemijski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Hemijski fakultet\3.jpg">
+      <PackagePath>Images\Hemijski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T10:59:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Hemijski fakultet\4.jpg">
+      <PackagePath>Images\Hemijski fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-15T11:00:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Mašinski fakultet\2.jpg">
+      <PackagePath>Images\Mašinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T08:59:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Mašinski fakultet\3.jpg">
+      <PackagePath>Images\Mašinski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:00:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Medicinski fakultet\2.jpg">
+      <PackagePath>Images\Medicinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:01:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Poljoprivredni fakultet\2.jpg">
+      <PackagePath>Images\Poljoprivredni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:01:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Poljoprivredni fakultet\3.jpg">
+      <PackagePath>Images\Poljoprivredni fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:05:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Pravni fakultet\2.jpg">
+      <PackagePath>Images\Pravni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:14:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Pravoslavni bogoslovski fakultet\2.jpg">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:16:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Pravoslavni bogoslovski fakultet\3.jpg">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T10:16:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Rudarsko-geološki fakultet\2.jpg">
+      <PackagePath>Images\Rudarsko-geološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Saobraćajni fakultet\2.jpg">
+      <PackagePath>Images\Saobraćajni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:14:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Stomatološki fakultet\2.jpg">
+      <PackagePath>Images\Stomatološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T10:05:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Tehnički fakultet u Boru\2.jpg">
+      <PackagePath>Images\Tehnički fakultet u Boru\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Tehnološko-metalurški fakultet\2.jpg">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:16:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Tehnološko-metalurški fakultet\3.jpg">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:16:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka građevinsko-geodetska škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka građevinsko-geodetska škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T13:02:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka hotelijerska škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T13:16:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka hotelijerska škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T13:18:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka inženjerska škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka inženjerska škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:59:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka tehnička škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T11:21:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka tehnička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T11:21:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka tehnička škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T11:27:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka tekstilna strukovna škola za dizajn, tehnologiju i menadžment\1.jpg">
+      <PackagePath>Images\Visoka tekstilna strukovna škola za dizajn, tehnologiju i menadžment\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:58:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka turistička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T12:18:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka turistička škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T12:25:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka zdravstvena škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka zdravstvena škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T13:23:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T10:01:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T13:06:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-15T13:06:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\1.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:56:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\2.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\2.jpg</PackagePath>
+      <Modified>2014-03-15T12:30:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\3.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\3.jpg</PackagePath>
+      <Modified>2014-03-15T12:32:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka železnička škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka železnička škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-15T09:55:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka železnička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka železnička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-15T12:28:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Šumarski fakultet\2.jpg">
+      <PackagePath>Images\Šumarski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-15T09:56:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Šumarski fakultet\3.jpg">
+      <PackagePath>Images\Šumarski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-15T09:56:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Šumarski fakultet\4.jpg">
+      <PackagePath>Images\Šumarski fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-15T09:56:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Šumarski fakultet\5.jpg">
+      <PackagePath>Images\Šumarski fakultet\5.jpg</PackagePath>
+      <Modified>2014-03-15T09:58:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka turistička škola strukovnih studija\1.gif">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\1.gif</PackagePath>
+      <Modified>2014-03-15T09:26:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\Images\Visoka zdravstvena škola strukovnih studija\1.gif">
+      <PackagePath>Images\Visoka zdravstvena škola strukovnih studija\1.gif</PackagePath>
+      <Modified>2014-03-15T10:03:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\ViewModel\aaa.txt">
+      <PackagePath>ViewModel\aaa.txt</PackagePath>
+      <Modified>2014-03-21T12:30:11.178</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-03-15T13:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-03-21T13:21:33.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-03-26T20:56:49.006</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

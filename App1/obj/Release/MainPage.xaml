@@ -1,0 +1,568 @@
+﻿<Page x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:App1.ViewModel"
+    x:Class="App1.MainPage"
+    mc:Ignorable="d"
+                        
+    x:Name="page">
+    <Page.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="Button">
+            <Setter Property="Background" Value="{ThemeResource ButtonBackgroundThemeBrush}"/>
+            <Setter Property="Foreground" Value="{ThemeResource ButtonForegroundThemeBrush}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderThemeBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}"/>
+            <Setter Property="Padding" Value="12,4,12,4"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPointerOverBackgroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPointerOverForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedBackgroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBackgroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBorderThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="Unfocused"/>
+                                    <VisualState x:Name="PointerFocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="3">
+                                <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ListBoxStyle1" TargetType="ListBox">
+            <Setter Property="Foreground" Value="{ThemeResource ListBoxForegroundThemeBrush}"/>
+            <Setter Property="Background" Value="{ThemeResource ListBoxBackgroundThemeBrush}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource ListBoxBorderThemeBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource ListBoxBorderThemeThickness}"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
+            <Setter Property="ScrollViewer.IsHorizontalRailEnabled" Value="True"/>
+            <Setter Property="ScrollViewer.VerticalScrollMode" Value="Enabled"/>
+            <Setter Property="ScrollViewer.IsVerticalRailEnabled" Value="True"/>
+            <Setter Property="ScrollViewer.ZoomMode" Value="Disabled"/>
+            <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="False"/>
+            <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True"/>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="TabNavigation" Value="Once"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBox">
+                        <Border x:Name="LayoutRoot" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="LayoutRoot">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="LayoutRoot">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ListBoxDisabledForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="LayoutRoot">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Null}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ScrollViewer x:Name="ScrollViewer" AutomationProperties.AccessibilityView="Raw" BringIntoViewOnFocusChange="{TemplateBinding ScrollViewer.BringIntoViewOnFocusChange}" HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}" IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}" IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}" Padding="{TemplateBinding Padding}" TabNavigation="{TemplateBinding TabNavigation}" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" ZoomMode="{TemplateBinding ScrollViewer.ZoomMode}">
+                                <ItemsPresenter/>
+                            </ScrollViewer>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="opisTekst" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,20,0,30"/>
+            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='2' Label="About" Icon="Contact"                            />
+            <AppBarButton x:ConnectionId='3' Label="Refresh"                            Icon="Refresh"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.DataContext>
+            <ViewModel:Data/>
+        </Grid.DataContext>
+
+        <!-- <ItemsControl x:Name="navbar" Grid.Column="0" Margin="5,30,0,0" ItemsSource="{Binding Navbar}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding Kategorija}" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch" Click="Button_Click"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl> -->
+        <ItemsControl x:Name="navbar" Grid.Column="0" Margin="5,30,0,0">
+            <Button x:ConnectionId='17' Content="Domovi" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='18' Content="Fakulteti" x:Name="btnFakulteti" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='19' Content="Menze" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='20' Content="Rečnik za brucoše" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='21' Content="Informacije" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+        </ItemsControl>
+        <StackPanel x:Name="content" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <StackPanel.Resources>
+                <Storyboard x:Name="pojavaSpiska">
+                    <PopInThemeAnimation TargetName="spisak"/>
+                </Storyboard>
+                <Storyboard x:Name="krajSpiska">
+                    <PopOutThemeAnimation TargetName="spisak"/>
+                </Storyboard>
+
+            </StackPanel.Resources>
+
+            <Grid x:Name="spisak" Background="#FFAED6D6" Margin="10,40,0,10">
+                <ListBox x:ConnectionId='16' x:Name="list" Visibility="Collapsed" Width="300"                                          Background="Transparent" VerticalAlignment="Top" Style="{StaticResource ListBoxStyle1}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Naziv}" TextWrapping="WrapWholeWords" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+
+            <Grid x:Name="gridFakulteti" Visibility="Collapsed" Margin="30,20,0,0" DataContext="{Binding SelectedItem, ElementName=list}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="naziv" MaxWidth="700" FontSize="35" Text="{Binding Naziv}" VerticalAlignment="Center" TextWrapping="WrapWholeWords"/>
+                <ScrollViewer x:Name="scrollViewer1" Grid.Row="1" MaxWidth="700" VerticalScrollBarVisibility="Hidden">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <Grid HorizontalAlignment="Left" MaxWidth="200" Height="100" Background="White">
+                            <Image Source="{Binding Logo}" />
+                        </Grid>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                            <TextBlock Text="Telefon:"/>
+                            <TextBlock Text="{Binding Telefon}" Margin="20,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <TextBlock Text="Adresa:"/>
+                            <TextBlock Text="{Binding Adresa}" Margin="20,0,0,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <TextBlock Text="Sajt:"/>
+                            <HyperlinkButton x:Name="sajthpl" Margin="20,-13,0,0" NavigateUri="{Binding Sajt}">
+                                <TextBlock x:Name="sajttb"   Text="{Binding Sajt}"/>
+                            </HyperlinkButton>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <TextBlock x:Name="tbEmail" Text="Email:"/>
+                            <TextBlock Text="{Binding Email}" Margin="20,0,0,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <TextBlock x:Name="tbDekan" Text="Dekan:"/>
+                            <TextBlock Text="{Binding Dekan}" Margin="20,0,0,0" />
+                        </StackPanel>
+                        <TextBlock x:Name="tbOpis" Text="Opis" FontSize="20" Foreground="Yellow" Margin="0,20,0,10"/>
+                        <TextBlock Text="{Binding Tekst}" TextWrapping="Wrap" Margin="0,15,0,10"/>
+                        <TextBlock x:Name="tbSmerovi" Text="Smerovi" FontSize="20" Foreground="Yellow"/>
+                        <TextBlock Text="{Binding Smerovi}"/>
+                        <TextBlock x:Name="tbZvanja" Text="Zvanja" FontSize="20" Foreground="Yellow"/>
+                        <TextBlock Text="{Binding Zvanja}"/>
+                        <TextBlock x:Name="tbUslovi" Text="Uslovi upisa" FontSize="20" Foreground="Yellow"/>
+                        <TextBlock Text="{Binding Uslovi_upisa}"/>
+
+                    </StackPanel>
+                </ScrollViewer>
+
+                <GridView x:ConnectionId='14' x:Name="FakultetigridView" Grid.Row="2" SelectionMode="Single"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" Margin="0,20,0,0">
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Width="150" Height="100" Stretch="Fill" Source="{Binding Mode=OneWay}" />
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+                <FlipView x:Name="FakultetiflipView" Margin="-400,-100,0,0" Grid.RowSpan="100" Grid.ColumnSpan="100"  Visibility="Collapsed" Grid.Row="1" Width="1000" Height="800" ItemsSource="{Binding Images}" HorizontalAlignment="Left">
+                    <FlipView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Button x:ConnectionId='15' Content="CLOSE" HorizontalAlignment="Right" Background="Red"                       />
+                                <Image MaxWidth="1000" MaxHeight="800" Source="{Binding Mode=OneWay}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </FlipView.ItemTemplate>
+                </FlipView>
+            </Grid>
+            <Grid x:Name="gridDomovi" Visibility="Collapsed" Margin="30,20,0,0" DataContext="{Binding SelectedItem, ElementName=list}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <StackPanel>
+                    <TextBlock x:Name="head" FontSize="30" Text="{Binding Naziv}" Margin="0,20,0,0"/>
+                    <TextBlock x:Name="address" FontSize="20" Text="{Binding Adresa}" />
+                    <TextBlock x:Name="phone" FontSize="20" Text="{Binding Telefon}" />
+                    <HyperlinkButton x:Name="web1" FontSize="20" NavigateUri="{Binding Web}">
+                        <TextBlock x:Name="link" FontSize="20" Text="{Binding Web}"></TextBlock>
+                    </HyperlinkButton>
+                </StackPanel>
+                <StackPanel x:Name="StackOpis" Grid.Row="1" Width="700">
+                    <TextBlock x:Name="opis" FontSize="15" TextWrapping="Wrap" Text="{Binding Opis}" MaxHeight="300" MaxWidth="700" />
+                </StackPanel>
+                <TextBlock x:Name="gsp" FontSize="16" Text="{Binding Prevoz}" Height="31" Grid.Row="1" VerticalAlignment="Bottom"/>
+                <GridView x:ConnectionId='13' x:Name="DomovigridView" Grid.Row="2" SelectionMode="None"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" >
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Width="150" Height="100" Stretch="Fill" Source="{Binding Mode=OneWay}" />
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
+            <Grid x:Name="gridMenze" Visibility="Collapsed" DataContext="{Binding SelectedItem, ElementName=list}" Margin="30,20,0,0">
+                <StackPanel>
+                    <TextBlock FontSize="30" Margin="0,20,0,0" Text="{Binding Naziv}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="Adresa: "/>
+                        <TextBlock FontSize="20" Text="{Binding Adresa}" Margin="15,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="Telefon: "/>
+                        <TextBlock FontSize="20" Text="{Binding Telefon}" Margin="15,0,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="Poslovodja: "/>
+                        <TextBlock FontSize="20" Text="{Binding Poslovodja}" Margin="15,0,0,0"/>
+                    </StackPanel>
+                    <TextBlock FontSize="18" Margin="10,30,0,0" Text="{Binding Opis}" MaxWidth="700" TextWrapping="WrapWholeWords"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="Radno vreme: " Margin="0,40,0,0" />
+                        <TextBlock FontSize="20" Text="{Binding RadnoVreme}" Margin="15,40,0,0"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="gridRecnik" Visibility="Collapsed" MaxWidth="750" Margin="30,20,0,0">
+                <Grid.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize" Value="16"/>
+                    </Style>
+                </Grid.Resources>
+                <ScrollViewer>
+                    <TextBlock TextWrapping="WrapWholeWords" Margin="0,0,30,0">
+                        <Bold>Akreditacija</Bold><LineBreak/> Akreditacija predstavlja proces provere kvaliteta visokoškolskih ustanova i vrednovanje njihovih studijskih programa na svim nivoima studija. <LineBreak/><LineBreak/><Bold>Bolonjska deklaracija</Bold><LineBreak/> Bolonjska deklaracija je deklaracija koju je potpisalo 29 ministara obrazovanja evropskih zemalja 19. juna 1999. godine u Bolonji. Republika Srbija je postala potpisnica Bolonjske deklaracije 2003. godine i tada se obavezala da će reformisati svoje visoko obrazovanje u skladu sa deklaracijom. Cilj koji je postavljen je stvaranje evropske zone visokog obrazovanja. Usaglašavanjem studijskih programa, uvođenjem ujednačenih akademskih stepena i obezbeđivanjem odgovarajućeg statusa svršenih studenata, priznanjem njihovih diploma na raznim evropskim univerzitetima, povećala bi se međunarodna kompetitivnost.<LineBreak/><LineBreak/><Bold>Budžet</Bold><LineBreak/> Po Zakonu o visokom obrazovanju, da bi student ostao na budžetu, treba u toku školske godine da ostvari 48 bodova. Odlukama Univerziteta je broj bodova za upis naredne godine smanjen za prve generacije „bolonjaca”. Studenti koji su trenutno na samofinansiranju mogu preći na budžet ukoliko ispune predviđene uslove za taj status.<Bold>Dodatak diplomi</Bold><LineBreak/> Student ima pravo da sluša i polaže i predmete koji nisu predviđeni njegovim studijskim programom. O tim ispitima se vodi posebna evidencija i ulaze u dodatak diplomi.<LineBreak/><LineBreak/><Bold>ESPB (Evropski sistem prenosa bodova)</Bold><LineBreak/> ESPB bodovi su kvantitativni pokazatelji opterećenja studenata na jednom predmetu. Prosto rečeno, za nedelju dana student treba da izdvoji za učenje onoliko sati koliko predmet nosi bodova. To uključuje predavanja i vežbe, predispitne obaveze koje student mora da ispuni, kao i samostalan rad.<LineBreak/><LineBreak/><Bold>Ispit</Bold><LineBreak/> Ispit može biti pismeni ili usmeni, ali i pismeni i usmeni. Forma ispita takođe može biti različita: u obliku testa, eseja i sl. Ispit može nositi minimalno 30 poena, a maksimalno 70 (od predviđenih 100 poena za svaki predmet). Ispit iz predmeta u zimskom semestru mogu se polagati u januarskom, aprilskom i junskom roku. Ispiti iz predmeta u letnjem semestru mogu se polagati u junskom, septembarskom i oktobarskom roku.<LineBreak/><LineBreak/><Bold>Ispitna pitanja</Bold><LineBreak/> Ispitna pitanja su pitanja koja možete dobiti na ispitu. Neki profesori ih ne koriste nego na ispitu smisle kakvo pitanje. Ako postoje, poželjno je učiti po njima.<LineBreak/><LineBreak/><Bold>Ispitne kartice</Bold><LineBreak/> Ispitne kartice su kartice sa ispisanim ispitnim pitanjima, koje izvlačite na ispitu. Neki profesori ne koriste kartice nego vam sami biraju pitanja.<LineBreak/><LineBreak/><Bold>Kolokvijum</Bold><LineBreak/> Kolokvijum je jedan vid predispitnih obaveza. To je najčešće test/provera znanja gradiva koje je urađeno do zakazanog termina. Neka vrsta ispita pred pravi ispit. Ne postoji za sve predmete. Može da bude oslobađajući, tj. da deo gradiva koji ste položili na kolokvijumu ne morate polagati na ispitu, ali i ne mora biti tako. Upisuje se u indeks, ali u posebne stranice i ne ulazi u prosek. Ta ocena može ali ne mora mnogo da utiče na ocenu koju ćete dobiti na ispitu. Kolokvijum može biti i uslov da se izađete na ispit.<LineBreak/><LineBreak/><Bold>Koncept </Bold><LineBreak/>- Po dobijanju pitanja na ispitu, ako je reč o usmenom polaganju, uglavnom dobijate vreme da napišete koncept koji ćete koristiti pri izlaganju.<LineBreak/><LineBreak/><Bold>Obavezni predmeti</Bold><LineBreak/> Obavezni predmeti su predmeti koji su obavezni za neki studijski program ili profil. Ukoliko student ne položi ispit iz obaveznog predmeta, sledeće godine ponovo upisuje taj predmet.<LineBreak/><Bold><LineBreak/>Obavezni izborni predmeti (OPI) </Bold><LineBreak/>- Sem obaveznih predmeta, matična katedra nudi još nekoliko predmeta od kojih treba izabrati jedan ili dva tako da se ostvari odredjeni broj ESPB. Ti predmeti se zovu obavezni izborni predmeti jer se biraju sa liste ponuđenih predmeta koji mogu da se izaberu u statusu OPI. To znači da student pri izboru izbornog predmeta (za koji može da uzme bilo koji predmet koji se predaje na fakultetu, a ima status izbornosti i uklapa se u određeni broj poena koji je studentu na raspolaganju za izborni predmet).<LineBreak/><LineBreak/><Bold>Organizacija studija</Bold><LineBreak/> Zakonom o visokom obrazovanju studije su organizovane u tri stepena. Studije prvog stepena su osnovne akademske studije ili osnovne strukovne studije. Studije drugog stepena su diplomske akademske studije, diplomske strukovne studije, kao i specijalističke studije. Studije trećeg stepena su doktorske studije.<LineBreak/><LineBreak/><Bold>Osnovne akademske studije </Bold><LineBreak/>- Na osnovnim akademskim studijama se izvodi akademski program čiji je cilj da osposobi studente da razvijaju i primenjuju stečena naučna, teorijska, stručna znanja. Osnovne akademske studije mogu trajati tri, odnosno četiri godine, tj. u tom periodu treba ostvariti 180, odnosno 240 ESPB. Lice koje završi osnovne studije dobija zvanje prvog stepena (bachelor) iz odgovarajuće oblasti. Prema Zakonu, student može studirati maksimalno 8 godina na osnovnim akademskim studijama.<LineBreak/><LineBreak/><Bold>Ocenjivanje studenata</Bold><LineBreak/> Ocenjivanje studenta se vrši na osnovu predispitnih obaveza i samog ispita. Za pokazano znanje student dobija ocenu na skali od 5 (nije položio) do 10 (izuzetan). Svaki predmet je vrednovan sa 100 poena, u šta ulaze razne predispitne obaveze i (pismeni/usmeni) ispit. Da bi student položio, mora ostvariti najmanje 51 poen. Na osnovu stečenih poena student može dobiti na sledeće ocene:<LineBreak/> 0-50 ocena 5 (nije položio)<LineBreak/>51-60 ocena 6 (dovoljan)<LineBreak/>61-70 ocena 7 (dobar)<LineBreak/>71-80 ocena 8 (vrlo dobar)<LineBreak/>81-90 ocena 9 (odličan)<LineBreak/>91-100 ocena 10 (izuzetan)<LineBreak/><LineBreak/><Bold>Oktobar II</Bold><LineBreak/> Rok za ostvarivanje uslova. Nije predviđen statutima fakulteta ali ga često studenti izmole na kraju godine. Negde se ograničava na mogućnost polaganja samo jednog ispita u tom roku.<LineBreak/><LineBreak/><Bold>Overa semestra </Bold><LineBreak/>Ovo radite na kraju svakog semestra i za to su vam često potrebni skupljeni potpisi profesora. Overa je uslov da upišete sledeći semestar.<LineBreak/><LineBreak/><Bold>Predispitne obaveze</Bold><LineBreak/> U predispitne obaveze spadaju pohađanje predavanja i vežbi, izrada kolokvijuma, seminarskih radova, prezentacija i dr. Za svaki vid predispitnih obaveza stiče se određeni broj poena, onako kako ih profesor odredi. Predispitne obaveze mogu nositi između 30 i 70 poena (od predviđenih 100 poena za svaki predmet).<LineBreak/><LineBreak/><Bold>Predrok</Bold><LineBreak/> Ukoliko profesor odredi tako, ispit se može polagati i pre regularnog roka, tj. u predroku. Za ispite iz neparnog semestra to je decembar, a za parne ispite – maj. Drže ga neki profesori, uglavnom za one koji su bili vredniji &#8211; išli na vežbe, radili seminarske radove itd.<LineBreak/><LineBreak/><Bold>Prijava ispita</Bold><LineBreak/> Svaki ispit mora da se prijavi po obrascu fakulteta. Negde svi plaćaju ove prijave a negde samo samofinansirajući studenti. Uglavnom postoji i rok, za one koji su zakasnili sa prijavom, da to naknadno urade ali se to leepo plaća. Bez prijave ne možete polagati ispit, barem zvanično. Može se desiti i da studentska služba zagubi Vašu prijavu pa da ne budete prozvani na ispitu. Tad morate odmah ići u st. službu da probate to rešiti.<LineBreak/><LineBreak/><Bold>Promena ispitivača</Bold><LineBreak/> Moguća na nekim fakultetima ali se plaća.<LineBreak/><LineBreak/><Bold>Puštanje papira za potpis</Bold><LineBreak/> Ovo rade neki profesori i asistenti kako bi vodili evidenciju ko je prisutan. Neki čak i uporeduju nasumično vaš potpis sa vašim potpisom sa prethodnog predavanja. Ili vam ne puštaju papir za potpise nego vas prozivaju.<LineBreak/><LineBreak/><Bold>Samofinansiranje</Bold><LineBreak/> Ukoliko student ne ispuni uslove za budžet, može nastaviti studije, ali u statusu samofinansirajućeg studenta. Da bi upisao narednu godinu u statusu samofinansirajućeg, student takođe mora da zadovolji određene uslove.<LineBreak/><LineBreak/><Bold>Semestar</Bold><LineBreak/> Semestar je period u kome se održavaju predavanja i vežbe. Postoje letnji i zimski semestar.<LineBreak/><LineBreak/><Bold>Skripte</Bold><LineBreak/> Postoje neautorizovane (prave ih studenti) i autorizovane (prave ih profesori). Prve su uglavnom skraćena verzija gradiva. Neke su dovoljne za spremanje ispita a neke ni izbiliza.<LineBreak/><LineBreak/><Bold>Skupljanje potpisa</Bold><LineBreak/> Da biste overili semestar, uglavnom je potrebno da skupite potpise svih profesora i asistenata kojim oni potvrđuju da ste prisustvovali predavanjima i vežbama. Ako ih niste sve skupili, negde je moguće nadomestiti 1-2 potpisa tako što ćete to debelo platiti fakultetu.<LineBreak/><LineBreak/><Bold>Seminarski rad</Bold><LineBreak/> To je jedan vid predispitnih obaveza. Student dobija zadatak da obradi određeni problem u nekoj oblasti. Pisanjem seminarskog rada, student uči o naučnoj metodologiji, kao i tehnikama akademskog pisanja.<LineBreak/><LineBreak/><Bold>Studijski program</Bold><LineBreak/> To je skup obaveznih i izbornih predmeta. Savlađivanjem gradiva iz tih predmeta student stiče određena znanja i veštine koja su predvđena tim studijskim programom ili uže definisanim profilom.<LineBreak/><LineBreak/><Bold>Stipendije</Bold><LineBreak/> Stipendije se dodeljuju uspešnim, darovitim, vrednim studentima. Student može konkurisati za stipendiju tek od druge godine studija. Postoje razne vrste stipendija: domaće, inostrane, fondacijske, korporacijske i dr.<LineBreak/><LineBreak/><Bold>Studentski kredit</Bold><LineBreak/> Za studentske kredite mogu da konkurišu i brucoši i studenti starijih godina, pod uslovom da se školuju na budžetu, da im je prebivalište u Srbiji i da nisu izgubili više od jedne godine studija. Da li će krediti biti bespovratni ili će morati da se vrate zavisi od toga da li su ispoštovane sve tačke ugovora koji se potpisuje prilikom preuzimanja kredita. Da bi kredit bio bespovratan prosek ocena mora da bude 8.51.<LineBreak/><LineBreak/><Bold>Učenje po kombinacijama</Bold> &#8211; Na nekim ispitima se izvlače kartice sa nekoliko pitanja na njima. To su tzv. kombinacije. Učenje po kombinacijama često znači da nećete da naučite sva pitanja nego samo neka pa je praktičnije da naučite pitanja koja idu zajedno u kombinaciji. Ali negde se svako pitanje izvlači posebno.<LineBreak/><LineBreak/><Bold>Upisivanje ocene</Bold><LineBreak/> Ako vam ocena nije odmah upisana u indeks (ako ste polagali u predroku ili van roka a po dogovoru sa profesorom), postarajte se da se ocena na vreme nađe u profesorovom zapisniku i u vašem indeksu. Ako je nema ni na jednom od ta dva, knjigu u ruke pa ispočetka.<LineBreak/><LineBreak/><Bold>Uslov</Bold><LineBreak/> Minimalni broj ispita koje morate položiti da biste upisali sledeću godinu. Ostale možete preneti. Često se npr. za upis treće godine traži neki broj položenih ispita iz druge i čista prva.<LineBreak/><LineBreak/><Bold>Uslovni ispit</Bold><LineBreak/> Ispiti koji se moraju položiti da biste mogli upisati sledeću godinu. Ne postoje svugde.<LineBreak/><LineBreak/><Bold>Vežbe</Bold><LineBreak/> Drže ih uglavnom asistenti. Trebalo bi da budu vežbe ispredavanog znanja, što negde i jesu, ali su negde samo teoretisanje i ponavljanje predavanja. Uglavnom su obavezna a posebno na prirodnim fakultetima.<LineBreak/><LineBreak/><Bold>Mobilnost</Bold><LineBreak/> Mobilnost podrazumeva međuuniverzitetsku pokretljivost studenata, nastavnog osoblja i istraživača kako u zemlji, tako i u inostranstvu bez obzira na to da li se radi samo o jednom delu studija(semestar, akademska godina) ili o nastavku celokupnih studija. Mobilnost studenata je jedan od prioriteta Evropske unije u oblasti obrazovne politike i to se najbolje očitava kroz finansijska sredstva investirana u programe mobilnosti kao što su Erasmus, Erasmus Mundus i drugi.<LineBreak/><LineBreak/><Bold>Čip kartica</Bold><LineBreak/> Za ostvarivanje prava na ishranu i smeštaj, kao legitimacija u okviru SC „Beograd” koristi se čip kartica. Pravo na izdavanje čip kartice imaju svi studenti čije se školovanje finansira iz budžeta Republike Srbije. Za izdavanje nove studentske čip kartice potrebni su: lična karta, indeks sa upisanim zimskim semestrom, popunjen Zahtev za izdavanje čip kartice i priznanice o uplati za potrebe izrade čip kartice. Žeton se dobija zajedno sa čip karticom i služi za dobijanje pribora. Bonovi za čip karticu dopunjuju se svakog meseca ili sedmično.
+                    </TextBlock>
+                </ScrollViewer>
+
+            </Grid>
+            <StackPanel x:Name="gridInformacije" Grid.ColumnSpan="2" Visibility="Collapsed" Orientation="Horizontal">
+                <ListBox x:ConnectionId='5' x:Name="lbVesti" ItemsSource="{Binding Vesti1}" Margin="0,20,0,10"                                           >
+                    <Storyboard x:Name="pojavaVesti">
+                        <PopInThemeAnimation TargetName="gridInformacije"/>
+                    </Storyboard>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="{Binding Naslov}" FontSize="20" TextWrapping="WrapWholeWords"/>
+                                <TextBlock Text="{Binding Datum}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Orientation="Vertical" Margin="30,120,0,0">
+                    <StackPanel.Resources>
+                        <Style TargetType="RadioButton">
+                            <Setter Property="Margin" Value="0,20,0,0"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <RadioButton x:ConnectionId='6' x:Name="radio1" Content="Studentske vesti"                              />
+                    <RadioButton x:ConnectionId='7' Content="Stipendije"                              />
+                    <RadioButton x:ConnectionId='8' Content="Studije"                              />
+                    <RadioButton x:ConnectionId='9' Content="Programi za studente"                              />
+                    <RadioButton x:ConnectionId='10' Content="Prakse"                              />
+                    <RadioButton x:ConnectionId='11' Content="Nagradni konkursi"                              />
+                    <RadioButton x:ConnectionId='12' Content="Saveti"                              />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="infoGridFakulteti" Visibility="Collapsed" Margin="30,40,0,0">
+                <TextBlock FontSize="20" Foreground="Yellow" Text="Korisni linkovi"/>
+                <HyperlinkButton NavigateUri="http://prijemni.infostud.com/najvaznije-odredbe-bolonjske-deklaracije.php">Najvažnije odredbe Bolonjske deklaracije</HyperlinkButton>
+                <HyperlinkButton NavigateUri="http://www.sc.rs/sc/index.php">USTANOVA STUDENTSKI CENTAR BEOGRAD</HyperlinkButton>
+                <HyperlinkButton NavigateUri="http://www.najstudent.com/">NajStudent</HyperlinkButton>
+            </StackPanel>
+            <ScrollViewer x:Name="infoGridDomovi"  Visibility="Collapsed" Margin="30,40,0,0" MaxWidth="720">
+                <StackPanel Margin="0,0,20,0">
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Služba za smeštaj i međunarodnu razmenu"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Službа smеštаја Ustаnоvе Studеntski cеntаr Bеоgrаd nаlаzi sе sа dvоrišnе strаnе Rudаrskо-gеоlоškоg fаkultеtа, u <Bold>Đušinој ulici brој 5а</Bold>, pаrаlеlnој sа Таkоvskоm ulicоm.<LineBreak/><LineBreak/> оpis pоslоvа Službе smеštаја spаdа sprоvоđеnjе Kоnkursа zа smеštај studеnаtа u studеntskе dоmоvе, kојi rаspisuје Мinistаrstvо prоsvеtе i nаukе, sаrаdnjа sа Studеntskim službаmа svih fаkultеtа i visоkih škоlа, fоrmirаnjе rаng listа studеnаtа kојi kоnkurišu zа smеštај i rаspоdеlа mеstа pо studеntskim dоmоvimа.<LineBreak/><LineBreak/> Službа smеštаја bаvi sе i smеštајеm strаnih studеnаtа kојi su u prоgrаmimа mеđunаrоdnе rаzmеnе. Službi smеštаја mоžеtе sе оbrаtiti zа svе infоrmаciје kоје ćе vаm biti оd kоristi ukоlikо stе vеć stаnаr dоmа, ili žеlitе tо dа pоstаnеtе.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Ko ima pravo na smeštaj u domovima Ustanove Studentski centar Beograd?"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                         Prаvо nа smеštај u Ustаnоvu imајu studеnti visоkоškоlskih ustаnоvа čiјi је оsnivаč Rеpublikа Srbiја, аutоnоmnа pоkrајinа ili јеdinicа lоkаlnе sаmоuprаvе, kојi su upisаni prvi put u tеkućој škоlskој gоdini nа studiје prvоg, drugоg ili trеćеg stеpеnа, čiје sе škоlоvаnjе finаnsirа iz <Bold>budžеtа</Bold> Rеpublikе Srbiје, kојi imајu držаvlјаnstvо Rеpublikе Srbiје i čiје prеbivаlištе niје u sеdištu visоkоškоlskе ustаnоvе nа kојој studirа. Prаvо nа smеštај u Ustаnоvu mоgu dа оstvаrе i studеnti kојi imајu držаvlјаnstvо držаvе u rеgiоnu, pоd uslоvimа iz stаvа 1. оvе tаčkе, оsim uslоvа kојi sе оdnоsi nа držаvlјаnstvо Rеpublikе Srbiје. Studеnti iz оsеtlјivih društvеnih grupа оstvаruјu prаvо nа smеštај pоd uslоvimа iz stаvа 1. оvе tаčkе i primеnоm blаžih kritеriјumа. <LineBreak/><LineBreak/> Prаvо nа smеštај imајu kаndidаti iz stаvа 1., 2. i 3. оvе tаčkе kојi ispunjаvајu slеdеćе uslоvе: <LineBreak/> <Bold>1) studеnti visоkоškоlskih ustаnоvа prvоg stеpеnа studiја:</Bold><LineBreak/> - оsnоvnе аkаdеmskе studiје, <LineBreak/> - оsnоvnе strukоvnе studiје. <LineBreak/><Bold>2) studеnti visоkоškоlskih ustаnоvа drugоg stеpеnа studiја:</Bold><LineBreak/> - diplоmskе аkаdеmskе studiје – mаstеr, <LineBreak/> - spеciјаlističkе strukоvnе studiје,<LineBreak/> - spеciјаlističkе аkаdеmskе studiје. <LineBreak/><Bold>3) studеnti visоkоškоlskih ustаnоvа trеćеg stеpеnа studiја:</Bold> <LineBreak/> - dоktоrskе studiје.<LineBreak/> <Bold>4)</Bold> studеnti <Underline>prvi put</Underline> upisаni u <Bold>оdgоvаrајuću</Bold> gоdinu оsnоvnih studiја prvоg stеpеnа оsnоvnih аkаdеmskih studiја i оsnоvnih strukоvnih studiја nа visоkоškоlskim ustаnоvаmа, u Rеpublici Srbiјi, u sklаdu sа Zаkоnоm о visоkоm оbrаzоvаnju („Službеni glаsnik RS“, br. 76/05, 100/07-аutеntičnо tumаčеnjе i 97/08 i 44/10) i studеnti оsnоvnih studiја kојi zаdržаvајu prаvо dа sе finаnsirајu iz budžеtа u оgrаničеnоm trајаnju pо istеku rеdоvnоg trајаnjа studiја prеmа člаnu 30. Zаkоnа о izmеni i dоpuni Zаkоnа о visоkоm оbrаzоvаnju (prоdužеnа gоdinа);<LineBreak /> <Bold>5)</Bold> studеnti <Underline>prvi put</Underline> upisаni u II, III, IV, V i VI gоdinu i аpsоlvеnti kојi u tоku trајаnjа studiја nisu izgubili višе оd јеdnе gоdinе (zа studеntе drugе i trеćе gоdinе), оdnоsnо dvе gоdinе (zа studеntе čеtvrtе, pеtе i šеstе, аpsоlvеntе i studеntе prоdužеnе gоdinе), kојi ćе zаvršiti studiје pо zаpоčеtоm nаstаvnоm plаnu i prоgrаmu;<LineBreak /> <Bold>6)</Bold> studеnti <Underline>prvi put</Underline> upisаni nа drugi stеpеn studiја (diplоmskе аkаdеmskе studiје – mаstеr, spеciјаlističkе strukоvnе studiје, spеciјаlističkе аkаdеmskе studiје) čiје sе škоlоvаnjе finаnsirа iz budžеtа Rеpublikе Srbiје, pоd uslоvоm dа nisu u rаdnоm оdnоsu;<LineBreak /> <Bold>7)</Bold> studеnti <Underline>prvi put</Underline> upisаni nа trеći stеpеn studiја (dоktоrskе studiје) čiје sе škоlоvаnjе finаnsirа iz budžеtа Rеpublikе Srbiје, о čеmu оdlučuје Мinistаrstvо, pоd uslоvоm dа nisu u rаdnоm оdnоsu.<LineBreak /><LineBreak /> Ispunjаvаnjе uslоvа zа priјеm u Ustаnоvu kаndidаti dоkаzuјu оdgоvаrајućоm оriginаlnоm dоkumеntаciјоm, оdnоsnо оvеrеnim fоtоkоpiјаmа.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Kriterijumi za utvrđivanje redosleda na rang-listama"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        <Bold>1) Uspeh ostvarenog u prethodnom školovanju, i to:</Bold> - opšteg uspeha u srednjoj školi - za studente I godine studija, - uspeha na visokoškolskoj ustanovi - za studente ostalih godina studija;<LineBreak/> <Bold>2) Socijalno-ekonomskog statusa porodice. </Bold> Socijalno-ekonomski status porodice utvrđuje se na osnovu proseka ukupnih mesečnih prihoda po članu porodice studenta, za period januar-jun tekuće godine. <LineBreak/><LineBreak/> <Bold>(izvоr: Zаkоn о učеničkоm i studеntskоm stаndаrdu)</Bold>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Vrednovanje kriterijuma"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Nаkоn istеkа rоkа zа priјаvlјivаnjе nа kоnkurs, nа оsnоvu dоstаvlјеnе dоkumеntаciје, utvrđuје sе rеdоslеd kаndidаtа zа priјеm u Ustаnоvu nа оsnоvu uspеhа оstvаrеnоg u prеthоdnоm škоlоvаnju i sоciјаlnо-еkоnоmskоg stаtusа pоrоdicе, i tо:<LineBreak /><LineBreak /> <Bold>1. Uspеh оstvаrеn u prеthоdnоm škоlоvаnju</Bold> iskаzuје sе slеdеćim brојеm bоdоvа: <LineBreak/><Bold>1) Zа studеntе I gоdinе prvоg stеpеnа studiја</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = ukupnа prоsеčnа оcеnа svih rаzrеdа srеdnjе škоlе iskаzаnа оcеnоm od 2 dо 5; 8 = kоrеktivni fаktоr);<LineBreak /><LineBreak /> <Bold>2) Zа studеntе оstаlih gоdinа prvоg stеpеnа studiја (оdnоsi sе i nа studеntе u stаtusu prоdužеnе gоdinе)</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 5 + ЕSPB/C x 0,8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = ukupnа prоsеčnа оcеnа u tоku studiја; 5 = kоrеktivni fаktоr; ЕSPB = brој ukupnо оstvаrеnih bоdоvа; C = brој gоdinа studirаnjа; 0.8 = kоrеktivni fаktоr); <LineBreak /><LineBreak /> <Bold>3) Zа studеntе оstаlih gоdinа prvоg stеpеnа studiја kојi, prеmа prоpisimа iz оblаsti visоkоg оbrаzоvаnjа imајu prаvо dа zаvršе studiје prеmа zаpоčеtоm nаstаvnоm plаnu i prоgrаmu i uslоvimа i prаvilimа studiја (оdnоsi sе i nа аpsоlvеntе)</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 8 – BZI x 2 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = prоsеčnа оcеnа u tоku studiја; BZI = brој zаоstаlih ispitа iz svih gоdinа studiја; 8 = kоrеktivni fаktоr);<LineBreak /> <Bold>(3-1)</Bold> dоdаtni brој bоdоvа zа gоdinu studiја iznоsi: <LineBreak /> - zа studеntе II gоdinе - 3 bоdа;<LineBreak /> - zа studеntе III gоdinе - 6 bоdоvа;<LineBreak /> - zа svаku nаrеdnu gоdinu dоdајu sе pо 2 bоdа, оsim zа аpsоlvеntе kојi zаdržаvајu brој bоdоvа zаvršnе gоdinе,<LineBreak /> <Bold>(3-2)</Bold> studеntimа kојi su gubili gоdinu tоkоm studiја zа svаku izgublјеnu gоdinu оduzimајu sе pо 2 bоdа. <LineBreak /><LineBreak /> <Bold>4) Zа studеntе I gоdinе drugоg stеpеnа studiја</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 5 + ЕSPB/C x 0,8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = prоsеčnа оcеnа iz zаvršеnоg prvоg stеpеnа studiја; 5 = kоrеktivni fаktоr; ЕSPB = brој ukupnо оstvаrеnih bоdоvа; C = brој gоdinа studirаnjа; 0,8 = kоrеktivni fаktоr);<LineBreak /><LineBreak /> <Bold>5) Zа studеntе II gоdinе drugоg stеpеnа studiја</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 5 + ЕSPB/C x 0,8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = prоsеčnа оcеnа sа prvоg stеpеnа studiја i I gоdinе drugоg stеpеnа studiја; 5 = kоrеktivni fаktоr; ЕSPB = brој ukupnо оstvаrеnih bоdоvа; C = brој gоdinа studirаnjа; 0,8 = kоrеktivni fаktоr);<LineBreak /><LineBreak /> <Bold>6) zа studеntе I gоdinе trеćеg stеpеnа studiја</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 5 + ЕSPB/C x 0,8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = prоsеčnа оcеnа iz prvоg i drugоg stеpеnа studiја; 5 = kоrеktivni fаktоr; ЕSPB = brој ukupnо оstvаrеnih bоdоvа; C = brој gоdinа studirаnjа; 0,8 = kоrеktivni fаktоr);<LineBreak /><LineBreak /> <Bold>7) Zа studеntе II i III gоdinе trеćеg stеpеnа studiја</Bold> brој bоdоvа prеmа uspеhu rаčunа sе pо slеdеćој fоrmuli: - BB = PО x 5 + ЕSPB/C x 0,8 (BB = brој bоdоvа svеdеn nа dvе dеcimаlе; PО = prоsеčnа оcеnа sа prvоg i drugоg stеpеnа studiја i prеthоdnih gоdinа trеćеg stеpеnа studiја; 5 = kоrеktivni fаktоr; ЕSPB = brој ukupnо оstvаrеnih bоdоvа; C = brој gоdinа studirаnjа; 0,8 = kоrеktivni fаktоr); <LineBreak /><LineBreak /> <Bold>Korektivni faktor za:<LineBreak /> * studente koji su osvojili 120 do 240 ESPB bodova dodati ........+1 bod<LineBreak /> * studente koji su osvojili 240 ESPB bodova i više dodati ........+2 boda <LineBreak /><LineBreak /> NAPOMENA:</Bold> U slučajevima kada broj ostvarenih ESPB bodova po godini studiranja prelazi 60, za potrebe rangiranja, računaće se maksimalno 60 ESPB bodova. <LineBreak /><LineBreak /> <Bold>2. Sоciјаlnо-еkоnоmski stаtus pоrоdicе</Bold> iskаzuје sе brојеm bоdоvа zа prоsеk ukupnih mеsеčnih prihоdа, pо člаnu pоrоdicе studеntа, zа pеriоd јаnuаr – јun tеkućе gоdinе, i tо:<LineBreak /> 1) dо 50% prоsеčnе zаrаdе bеz pоrеzа i dоprinоsа pо zаpоslеnоm u Rеpublici Srbiјi - <Bold>1 bоd</Bold>; 2) dо 100% i prеkо prоsеčnе zаrаdе bеz pоrеzа i dоprinоsа pо zаpоslеnоm u Rеpublici Srbiјi - <Bold>0 bоdоvа</Bold>. Studеnti čiје је prеbivаlištе nа tеritоriјi Аutоnоmnе Pоkrајinе Kоsоvо i Меtоhiја, а nisu u mоgućnоsti dа pribаvе uvеrеnjе о prihоdu pо člаnu pоrоdicе, prihоd pо člаnu pоrоdicе bоduје sе <Bold> 1 bоdоm</Bold>. <LineBreak /> Prоsеčnа zаrаdа bеz pоrеzа i dоprinоsа pо zаpоslеnоm u Rеpublici Srbiјi, zа pеriоd оd 1.јаnuаrа dо 30. јunа tеkućе gоdinе, rаčunа sе prеmа pоdаcimа Rеpubličkоg zаvоdа zа stаtistiku.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Dokumenta potrebna za konkurisanje"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        <Bold>I Uslоvi priјеmа:</Bold><LineBreak /> Prаvо nа smеštај u Ustаnоvu zа smеštај studеnаtа imајu studеnti <Underline>prvi put upisаni u prvu gоdinu </Underline> оsnоvnih studiја prvоg stеpеnа čiје sе škоlоvаnjе finаnsirа iz<Bold> budžеtа</Bold> Rеpublikе Srbiје, kојi imајu držаvlјаnstvо Rеpublikе Srbiје ili držаvе u rеgiоnu i čiје prеbivаlištе niје u sеdištu visоkоškоlskе ustаnоvе nа kојој studirајu. <LineBreak /><LineBreak /> <Bold>II Kоnkursnа dоkumеntаciја:</Bold><LineBreak /> <Bold>1.</Bold> priјаvа zа priјеm u Ustаnоvu (kupuје sе prilikоm kоnkurisаnjа),<LineBreak /> <Bold>2.</Bold> оvеrеnе fоtоkоpiје svеdоčаnstаvа I, II, III, IV gоdinе srеdnjе škоlе (prе prеdаје оriginаlа zа upis nа fаkultеt-visоku škоlu оvеriti fоtоkоpiје),<LineBreak /> <Bold>3.</Bold> uvеrеnjе о upisu prvе gоdinе studiја (prvi put) nа tеrеt budžеtа Rеpublikе Srbiје (izdаје fаkultеt-visоkа škоlа),<LineBreak /> <Bold>4.</Bold> uvеrеnjе о prоsеčnоm mеsеčnоm prihоdu pо člаnu pоrоdice (overava nаdlеžni оpštinski оrgаn iz mеstа prеbivаlištа kаndidаtа а оbrаzаc sе mоžе kupiti nа blаgајnаmа studеntskih dоmоvа Ustаnоvе Studеntski cеntаr ''Bеоgrаd'' ili preuzeti <Hyperlink NavigateUri="http://www.sc.rs/sc/Uverenje_o_prihodima.pdf"> odavde </Hyperlink> )<LineBreak /> <Bold>5.</Bold> indеks i ličnа kаrtа (nа uvid)<LineBreak /> <Bold>nаpоmеnа:</Bold><LineBreak /> <Bold>•</Bold> studеnti čiје је prеbivаlištе nа tеritоriјi АP Kоsоvо i Меtоhiја, а nisu u mоgućnоsti dа pribаvе uvеrеnjе о prihоdu pо člаnu pоrоdicе, dоnоsе fоtоkоpiјu ličnе kаrtе i оriginаl nа uvid;<LineBreak /> <Bold>•</Bold> studеnti kојi su srеdnju škоlu zаvršili prе 2013.gоdinе dužni su dа dоnеsu prаvdаnjе (vојnu knjižicu, rаdnu knjižicu, uvеrеnjе о prеthоdnоm studirаnju...) zа gоdinе оd zаvršеtkа srеdnjе škоlе dо upisа nа fаkultеt-visоku škоlu.<LineBreak /><LineBreak />
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Osetljive društvene grupe"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Kаndidаti iz оsеtlјivih društvеnih grupа <Bold>kојi prеmа rеdоslеdu nа kоnаčnој rаng-listi nisu dоbili smеštај u prvој rаspоdеli</Bold> imајu prаvо dа pоdnеsu zаhtеv ustаnоvi, оdnоsnо оdgоvаrајućој službi, dа sе pоsеbnо rаngirајu u оkviru nаmеnski оprеdеlјеnih kаpаcitеtа ustаnоvе.<LineBreak /><LineBreak /> Zаhtеv sе pоdnоsi u rоku оd 8 dаnа оd dаnа isticаnjа kоnаčnе rаng-listе.<LineBreak /><LineBreak /> Uz zаhtеv kаndidаt pоdnоsi dоkumеntаciјu kојоm dоkаzuје pripаdnоst оsеtlјivој društvеnој grupi, i tо:<LineBreak /> - <Underline>iz mаtеriјаlnо ugrоžеnе pоrоdicе</Underline> – rеšеnjе Cеntrа zа sоciјаlni rаd dа su primаоci <Bold>stаlnе</Bold> sоciјаlnе pоmоći (оvеrеnа fоtоkоpiја),<LineBreak /> - <Underline>studеnti bеz rоditеlјskоg stаrаnjа</Underline> – pоtvrdа dа su nа еvidеnciјi Cеntrа zа sоciјаlni rаd ili umrlicе prеminulih rоditеlја,<LineBreak /> - <Underline>iz јеdnоrоditеlјskih pоrоdicа</Underline> – izvоd iz mаtičnе knjigе umrlih zа prеminulоg rоditеlја ili izvоd iz mаtičnе knjigе rоđеnih studеntа,<LineBreak /> - <Underline>iz rоmskе nаciоnаlnе mаnjinе</Underline> – pоtvrdа Nаciоnаlnоg sаvеtа rоmskе nаciоnаlnе mаnjinе, оdnоsnо Kаncеlаriје zа inkluziјu Rоmа,<LineBreak /> - <Underline>licа sа invаliditеtоm, licа s hrоničnim bоlеstimа i rеkоvаlеscеnti</Underline> – оdlukа kоmisiје kојu fоrmirа ustаnоvа u sklаdu sа Prаvilnikоm о smеštајu i ishrаni učеnikа i studеnаtа i оvim kоnkursоm,<LineBreak /> - <Underline>licа čiјi su rоditеlјi nеstаli ili su kidnаpоvаni nа tеritоriјi Kоsоvа i Меtоhiје i nа tеritоriјi rеpublikа bivšе SFRЈ</Underline> – pоtvrdа оdgоvаrајućеg udružеnjа pоrоdicа kidnаpоvаnih i nеstаlih licа,<LineBreak /> - <Underline>izbеglicе i rаsеlјеnа licа nа tеritоriјi Rеpublikе Srbiје</Underline> – vаžеćа izbеgličkа lеgitimаciја, rаsеlјеničkа lеgitimаciја i kоpiја ličnе kаrtе,<LineBreak /> - <Underline>pоvrаtnici pо spоrаzumu о rеаdmisiјi i dеpоrtоvаni studеnti</Underline> – pоtvrdа МUP-а.<LineBreak /><LineBreak /> Zа svаku оsеtlјivu društvеnu grupu fоrmirа sе pоsеbnа rаng-listа, nа оsnоvu bоdоvа iz kоnаčnе rеdоvnе rаng-listе.<LineBreak /><LineBreak /> Izuzеtnо оd nаprеd nаvеdеnоg stаvа, zа studеntе sа invаliditеtоm, studеntе s hrоničnim bоlеstimа i studеntе rеkоvаlеscеntе, pоsеbnа rаng-listа sе utvrđuје nа prеdlоg kоmisiје kојu оbrаzuје dirеktоr ustаnоvе, а kојu sаčinjаvајu јеdаn prеdstаvnik studеntskоg cеntrа i tri lеkаrа iz studеntskе pоliklinikе.<LineBreak /><LineBreak /> Kаndidаti iz оsеtlјivih grupа bićе prоpоrciоnаlnо zаstuplјеni/rаngirаni/primlјеni u оdnоsu nа brој priјаvlјеnih kаndidаtа, u оkviru <Bold>dо</Bold> 10 % nаmеnski оprеdеlјеnih kаpаcitеtа ustаnоvе. <LineBreak /> <LineBreak /> <Bold>(Izvor: Pravilnik o smeštaju i ishrani)</Bold>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Rang - liste"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        <Bold>Rang lista za smeštaj u studentski centar za studente I godine studija radi se odvojeno od rang liste za studente ostalih godina studija. </Bold> Rеdоslеd kаndidаtа utvrđuје sе nа оsnоvu uspеhа оstvаrеnоg u prеthоdnоm škоlоvаnju i sоciјаlnо-еkоnоmskоg stаtusа pоrоdicе. <Bold>(izvоr: Zаkоn о učеničkоm i studеntskоm stаndаrdu) </Bold> <LineBreak/><LineBreak/> <Hyperlink NavigateUri="http://www.sc.rs/sc/rang_lista2/brucosi/index.php" ><Bold>Rang lista za brucoše</Bold></Hyperlink> <LineBreak/><LineBreak/> <Hyperlink NavigateUri="http://www.sc.rs/sc/stariji_liste/starijiIndex.php"><Bold>Rang lista za starije studente</Bold></Hyperlink>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Šta je potrebno prilikom useljenja?"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        <Bold>Prilikom useljenja u Studentski centar, student dostavlja: </Bold> <LineBreak/>- lekarsko uverenje o opštem zdravstvenom stanju (pregled se obavlja u Studentskoj poliklinici), <LineBreak/>- <Hyperlink NavigateUri="http://www.sc.rs/sc/Karton.pdf">uput za smeštaj</Hyperlink>, <LineBreak/>- studentsku legitimaciju, odnosno elektronsku karticu, <LineBreak/>- indeks, <LineBreak/>- ličnu kartu, <LineBreak/>- dokaz o uplati smeštaja. <Bold> Uput za smeštaj student, po pravilu, podiže lično u službi smeštaja studentskog centra, odnosno odgovarajućoj službi visokoškolske ustanove.</Bold><LineBreak/><LineBreak/> <Bold>(Izvor: Pravilnik o smeštaju i ishrani)</Bold>
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer x:Name="infoGridMenze" Visibility="Collapsed" Margin="30,40,0,0" MaxWidth="720">
+                <StackPanel Margin="0,0,20,0">
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Pravo na korišćenje ishrane u studentskim restoranima"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Prаvо nа ishrаnu оd tri оbrоkа dnеvnо imајu studеnti kојi ispunjаvајu оpštе uslоvе iz člаnа 4. Zаkоnа о učеničkоm i studеntskоm stаndаrdu, i čiје prеbivаlištе niје u mеstu studirаnjа. Prаvо nа ishrаnu оd јеdnоg оbrоkа dnеvnо imајu studеnti kојi ispunjаvајu оpštе uslоvе iz člаnа 4. оvоg zаkоnа i čiје је prеbivаlištе u mеstu studirаnjа. <LineBreak /><LineBreak /> Odluku o ostvarivanju prava studenta na ishranu donosi direktor Studentskog centra, na osnovu zahteva studenta i dostavljene dokumentacije.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Ishrana studenata koji koriste usluge smeštaja USCB i kojima prebivalište nije na teritoriji grada Beograda" TextWrapping="WrapWholeWords"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Studenti kojima prebivalište (adresa na kojoj su prijavljeni) ne pripada teritoriji grada Beograda, bilo da koriste smeštaj USCB ili ne, imaju pravo na ishranu u studentskim restoranima i to: <LineBreak/>   - studenti čije se školovanje finansira iz budžeta republike Srbije imaju pravo na tri obroka dnevno (doručak, ručak, večera), <Bold>po regresiranim cenama</Bold><LineBreak/>   - studenti koji sami finansiraju svoje školovanje imaju pravo na tri obroka dnevno, <Bold>po ekonomskim cenama</Bold>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Ishrana studenata kojima je prebivalište na teritoriji grada Beograda" TextWrapping="WrapWholeWords"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Studenti kojima je prebivalište na teritoriji grada Beograda imaju pravo na <Bold>jedan obrok dnevno</Bold> (doručak, ručak, večera).<LineBreak/> Studenti čije se školovanje finansira iz budžeta republike Srbije <Bold>po regresiranim cenama</Bold>.<LineBreak/> Studenti koji sami finansiraju svoje školovanje <Bold>po ekonomskim cenama</Bold>.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Kako i gde se mogu kupiti obroci?" TextWrapping="WrapWholeWords"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Da bi se hranio u restoranu, student prvenstveno mora da poseduje studentsku karticu pomoću koje kupuje obroke.<LineBreak/><LineBreak/> Obroci se kupuju na blagajnama studentskih restorana ili na info kioscima.<LineBreak/><LineBreak/> Broj obroka upisuje se na čip kartice i nakon svakog obroka, smanjuje se za jedan.<LineBreak/><LineBreak/> <Bold>Do 20. u mesecu, obroci se mogu kupovati po dekadama (po deset doručaka, ručaka, večera), a posle 20. mogu se kupovati i pojedinačno. Posle 27. u mesecu mogu se kupiti obroci za naredni mesec.</Bold><LineBreak/><LineBreak/> Na blagajnama restorana može se kupiti i žeton koji služi za korišćenje escajga.
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Uputstvo za kupovinu obroka na info kioscima" TextWrapping="WrapWholeWords"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        <Hyperlink NavigateUri="http://www.sc.rs/sc/Uputstvo.pdf">Uputstvo za kupovinu ebonova na info kioscima</Hyperlink>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Yellow" Text="Studentski restorani i usluge koje pružaju" TextWrapping="WrapWholeWords"/>
+                    <TextBlock Style="{StaticResource opisTekst}">
+                        Studenti mogu koristiti usluge dole navedenih restorana.<LineBreak/><LineBreak/> Elektronski meni obroci se mogu kupiti na blagajnama u domovima i restoranima, kao i na info kioscima, pri čemu se kupljeni meni obroci mogu koristiti u bilo kom restoranu.
+                    </TextBlock>
+                    <Grid MaxWidth="600">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+                            </Style>
+                        </Grid.Resources>
+                        <Grid Grid.ColumnSpan="5" Background="Orange"/>
+                        <TextBlock Text="Naziv restorana" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" />
+                        <TextBlock Text="Prodaja bonova" Grid.Column="1" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Text="Doručak" Grid.Column="2" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Text="Ručak" Grid.Column="3" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Text="Večera" Grid.Column="4" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Text="Karaburma" Grid.Row="1" Margin="0,10,0,0"/>
+                        <TextBlock Text="Patris" Grid.Row="2" />
+                        <TextBlock Text="Rifat" Grid.Row="3" />
+                        <TextBlock Text="Kralj Aleksandar I" Grid.Row="4" />
+                        <TextBlock Text="Voždovac" Grid.Row="5" />
+                        <TextBlock Text="Košutnjak" Grid.Row="6" />
+                        <TextBlock Text="Zemun" Grid.Row="7" />
+                        <TextBlock Text="Studentski grad" Grid.Row="8" />
+                        <TextBlock Text="Mika Mitrović" Grid.Row="9" />
+                        <TextBlock Text="Obilićev venac" Grid.Row="10" />
+                        <TextBlock Text="Đušina" Grid.Row="11" />
+                        <TextBlock Text="Agronom" Grid.Row="12" />
+                        <TextBlock Text="Veterinar" Grid.Row="13" />
+                        <TextBlock Text="Medicinar" Grid.Row="14" />
+                        <TextBlock Text="Farmaceut" Grid.Row="15" />
+                        <TextBlock Text="Šumarski" Grid.Row="16" />
+                        <TextBlock Text="Glumac" Grid.Row="17" />
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="1" TextAlignment="Center" Margin="0,10,0,0"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="2" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="3" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="4" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="5" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="6" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="7" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="8" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="9" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="1" Grid.Row="10" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="11" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="12" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="13" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="14" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="15" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="16" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="1" Grid.Row="17" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="1" TextAlignment="Center" Margin="0,10,0,0"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="2" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="3" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="4" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="5" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="6" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="7" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="8" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="9" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="10" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="11" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="12" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="13" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="14" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="15" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="16" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="2" Grid.Row="17" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="1" TextAlignment="Center" Margin="0,10,0,0"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="2" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="3" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="4" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="5" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="6" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="7" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="8" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="9" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="10" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="11" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="12" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="3" Grid.Row="13" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="3" Grid.Row="14" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="3" Grid.Row="15" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="3" Grid.Row="16" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="3" Grid.Row="17" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="1" TextAlignment="Center" Margin="0,10,0,0"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="2" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="3" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="4" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="5" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="6" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="7" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="8" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="9" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="10" TextAlignment="Center"/>
+                        <TextBlock Text="√" Grid.Column="4" Grid.Row="11" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="12" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="13" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="14" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="15" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="16" TextAlignment="Center"/>
+                        <TextBlock Text="-" Grid.Column="4" Grid.Row="17" TextAlignment="Center"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+           
+        </StackPanel>
+
+        <SearchBox x:ConnectionId='4' Width="200" Height="30" x:Name="searchBox" FocusOnKeyboardInput="True"                                                                                                      Grid.RowSpan="5" Grid.ColumnSpan="5" Margin="0"/>
+        <ProgressRing x:Name="ring" Foreground="Green" HorizontalAlignment="Center" Width="100" Height="100" IsActive="False" VerticalAlignment="Center" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="ringtext" Text="Ucitavam nove podatke" Foreground="Green" FontSize="15" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="0,180,0,0"/>
+    </Grid>
+</Page>
+
