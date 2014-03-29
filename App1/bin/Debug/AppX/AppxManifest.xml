@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="App1.exe" EntryPoint="App1.App">
-      <m2:VisualElements DisplayName="Vodič za studente" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="App1" ForegroundText="light" BackgroundColor="#666666">
-        <m2:DefaultTile DefaultSize="square150x150Logo" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Studentski vodič">
+      <m2:VisualElements DisplayName="Vodič za srednjoškolce" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="App1" ForegroundText="light" BackgroundColor="#666666">
+        <m2:DefaultTile DefaultSize="square150x150Logo" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Srednjoškolski vodič">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
           </m2:ShowNameOnTiles>
@@ -48,7 +48,7 @@
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
     <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Express 2013 for Windows" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.21005.1" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.21005.1" />

@@ -1,1 +1,1 @@
-C:\Users\MARKOLUKA\Desktop\app za start\App1\App1\App1.csproj;neutral
+C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\App1.csproj;neutral

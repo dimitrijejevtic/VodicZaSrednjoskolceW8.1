@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="App1.App">
-      <m2:VisualElements DisplayName="Vodič za studente" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="App1" ForegroundText="light" BackgroundColor="#666666">
-        <m2:DefaultTile DefaultSize="square150x150Logo" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Studentski vodič">
+      <m2:VisualElements DisplayName="Vodič za srednjoškolce" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="App1" ForegroundText="light" BackgroundColor="#666666">
+        <m2:DefaultTile DefaultSize="square150x150Logo" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Srednjoškolski vodič">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
           </m2:ShowNameOnTiles>
