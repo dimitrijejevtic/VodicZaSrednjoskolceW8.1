@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-29T09:43:46.328</Modified>
+      <Modified>2014-03-29T10:36:57.404</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Debug\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2014-03-29T09:43:45.727</Modified>
+      <Modified>2014-03-29T10:36:57.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -536,11 +536,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-03-29T09:40:31.734</Modified>
+      <Modified>2014-03-29T10:33:19.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-03-29T09:43:45.888</Modified>
+      <Modified>2014-03-29T10:36:57.245</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

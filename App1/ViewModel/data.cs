@@ -501,11 +501,18 @@ namespace App1.ViewModel
 
                 try
                 {
-                    string[] rss_linkovi = { "http://rss.infostud.com/prijemni/1"};
+                    string[] rss_linkovi = { "http://rss.infostud.com/najstudent/30", "http://rss.infostud.com/najstudent/10", "http://rss.infostud.com/najstudent/34", "http://rss.infostud.com/najstudent/7", "http://rss.infostud.com/najstudent/23", "http://rss.infostud.com/najstudent/33", "http://rss.infostud.com/prijemni/1", "http://rss.infostud.com/najstudent/22" };
                     for (int i = 0; i < rss_linkovi.Length; i++)
                     {
                         string kategorijaVesti = "";
-                        if (i == 0) kategorijaVesti = "Vesti za srednjoskolce";
+                        if (i == 0) kategorijaVesti = "Studentske vesti";
+                        else if (i == 1) kategorijaVesti = "Stipendije";
+                        else if (i == 2) kategorijaVesti = "Studije";
+                        else if (i == 3) kategorijaVesti = "Programi za studente";
+                        else if (i == 4) kategorijaVesti = "Prakse";
+                        else if (i == 5) kategorijaVesti = "Nagradni konkursi";
+                        else if (i == 6) kategorijaVesti = "Vesti za srednjoskolce";
+                        else kategorijaVesti = "Saveti";
                         var a1 = await client.GetByteArrayAsync(rss_linkovi[i]);
                         string rss = Encoding.UTF8.GetString(a1, 0, a1.Length);
                         XElement xmlVesti = XElement.Parse(rss);
@@ -519,7 +526,7 @@ namespace App1.ViewModel
                             catch { }
                         }
                     }
-                    prilagodi("Vesti za srednjoskolce");
+                    prilagodi("Studentske vesti");
                 }
                 catch { }
 

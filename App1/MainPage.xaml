@@ -357,6 +357,7 @@
                     <RadioButton Content="Programi za studente" Checked="RadioButton_Checked"/>
                     <RadioButton Content="Prakse" Checked="RadioButton_Checked"/>
                     <RadioButton Content="Nagradni konkursi" Checked="RadioButton_Checked"/>
+                    <RadioButton Content="Vesti za srednjoskolce" Checked="RadioButton_Checked"/>
                     <RadioButton Content="Saveti" Checked="RadioButton_Checked"/>
                 </StackPanel>
             </StackPanel>
