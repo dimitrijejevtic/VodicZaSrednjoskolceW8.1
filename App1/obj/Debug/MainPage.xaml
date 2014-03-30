@@ -357,7 +357,7 @@
                     <RadioButton x:ConnectionId='9' Content="Programi za studente"                              />
                     <RadioButton x:ConnectionId='10' Content="Prakse"                              />
                     <RadioButton x:ConnectionId='11' Content="Nagradni konkursi"                              />
-                    <RadioButton x:ConnectionId='12' Content="Vesti za srednjoskolce"                              />
+                    <RadioButton x:ConnectionId='12' Content="Vesti za srednjoškolce"                              />
                     <RadioButton x:ConnectionId='13' Content="Saveti"                              />
                 </StackPanel>
             </StackPanel>

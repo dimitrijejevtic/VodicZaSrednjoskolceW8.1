@@ -511,7 +511,7 @@ namespace App1.ViewModel
                         else if (i == 3) kategorijaVesti = "Programi za studente";
                         else if (i == 4) kategorijaVesti = "Prakse";
                         else if (i == 5) kategorijaVesti = "Nagradni konkursi";
-                        else if (i == 6) kategorijaVesti = "Vesti za srednjoskolce";
+                        else if (i == 6) kategorijaVesti = "Vesti za srednjoškolce";
                         else kategorijaVesti = "Saveti";
                         var a1 = await client.GetByteArrayAsync(rss_linkovi[i]);
                         string rss = Encoding.UTF8.GetString(a1, 0, a1.Length);
