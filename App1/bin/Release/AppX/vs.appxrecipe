@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DIMI</Machine>
+    <WindowsUser>Dimitrije</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>21805markostakic.Vodizastudente</PackageIdentityName>
+    <RegisteredManifestChecksum>4604923D9FDC799F08B9EDD5F37732FEC7D9640E23A86C2936FEB25BF5527B91</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>21805markostakic.Vodizastudente_1.1.0.1_neutral__fxvasns6ar64c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>21805markostakic.Vodizastudente_fxvasns6ar64c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>21805markostakic.Vodizastudente</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=321CB149-67BD-4D1F-A78B-2B84DEB614DE</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.1</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-11T19:39:56.444</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Release\App1.exe">
+      <PackagePath>App1.exe</PackagePath>
+      <Modified>2014-04-11T19:39:54.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2014-03-29T09:40:32.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-29T09:40:30.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.457</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Arhitektonski fakultet\1.png">
+      <PackagePath>Images\Arhitektonski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Biološki fakultet\1.png">
+      <PackagePath>Images\Biološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Ekonomski fakultet\1.png">
+      <PackagePath>Images\Ekonomski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Elektrotehnički fakultet\1.png">
+      <PackagePath>Images\Elektrotehnički fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet bezbednosti\1.png">
+      <PackagePath>Images\Fakultet bezbednosti\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet organizacionih nauka\1.png">
+      <PackagePath>Images\Fakultet organizacionih nauka\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.769</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet političkih nauka\1.png">
+      <PackagePath>Images\Fakultet političkih nauka\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet sporta i fizičkog vaspitanja\1.png">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet veterinarske medicine\1.png">
+      <PackagePath>Images\Fakultet veterinarske medicine\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet za fizičku hemiju\1.png">
+      <PackagePath>Images\Fakultet za fizičku hemiju\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\1.png">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\3.png">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\3.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Farmaceutski fakultet\1.png">
+      <PackagePath>Images\Farmaceutski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.828</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filološki fakultet\1.png">
+      <PackagePath>Images\Filološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.833</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filozofski fakultet\1.png">
+      <PackagePath>Images\Filozofski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fizički fakultet\1.png">
+      <PackagePath>Images\Fizički fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.844</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Građevinski fakultet\1.png">
+      <PackagePath>Images\Građevinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Hemijski fakultet\1.png">
+      <PackagePath>Images\Hemijski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Mašinski fakultet\1.png">
+      <PackagePath>Images\Mašinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Medicinski fakultet\1.png">
+      <PackagePath>Images\Medicinski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\1.png">
+      <PackagePath>Images\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.462</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Poljoprivredni fakultet\1.png">
+      <PackagePath>Images\Poljoprivredni fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Pravni fakultet\1.png">
+      <PackagePath>Images\Pravni fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Pravoslavni bogoslovski fakultet\1.png">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.881</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Rudarsko-geološki fakultet\1.png">
+      <PackagePath>Images\Rudarsko-geološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Saobraćajni fakultet\1.png">
+      <PackagePath>Images\Saobraćajni fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Stomatološki fakultet\1.png">
+      <PackagePath>Images\Stomatološki fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Tehnički fakultet u Boru\1.png">
+      <PackagePath>Images\Tehnički fakultet u Boru\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Tehnološko-metalurški fakultet\1.png">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Učiteljski fakultet\1.png">
+      <PackagePath>Images\Učiteljski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka građevinsko-geodetska škola strukovnih studija\1.png">
+      <PackagePath>Images\Visoka građevinsko-geodetska škola strukovnih studija\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka hotelijerska škola strukovnih studija\1.png">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:30.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Šumarski fakultet\1.png">
+      <PackagePath>Images\Šumarski fakultet\1.png</PackagePath>
+      <Modified>2014-03-29T09:40:31.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-29T09:40:30.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-11T19:29:13.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-29T09:52:17.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-04-11T19:29:13.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Arhitektonski fakultet\2.jpg">
+      <PackagePath>Images\Arhitektonski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Arhitektonski fakultet\3.jpg">
+      <PackagePath>Images\Arhitektonski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska politehnika - visoka škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Beogradska politehnika - visoka škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska poslovna škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska poslovna škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.700</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Beogradska poslovna škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Beogradska poslovna škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Biološki fakultet\2.jpg">
+      <PackagePath>Images\Biološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Biološki fakultet\3.jpg">
+      <PackagePath>Images\Biološki fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Biološki fakultet\4.jpg">
+      <PackagePath>Images\Biološki fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Ekonomski fakultet\2.jpg">
+      <PackagePath>Images\Ekonomski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Ekonomski fakultet\3.jpg">
+      <PackagePath>Images\Ekonomski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Elektrotehnički fakultet\2.jpg">
+      <PackagePath>Images\Elektrotehnički fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Elektrotehnički fakultet\3.jpg">
+      <PackagePath>Images\Elektrotehnički fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.725</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet bezbednosti\2.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet bezbednosti\3.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.760</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet bezbednosti\4.jpg">
+      <PackagePath>Images\Fakultet bezbednosti\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet organizacionih nauka\2.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet organizacionih nauka\3.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet organizacionih nauka\4.jpg">
+      <PackagePath>Images\Fakultet organizacionih nauka\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet političkih nauka\2.jpg">
+      <PackagePath>Images\Fakultet političkih nauka\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet političkih nauka\3.jpg">
+      <PackagePath>Images\Fakultet političkih nauka\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet sporta i fizičkog vaspitanja\2.jpg">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet sporta i fizičkog vaspitanja\3.jpg">
+      <PackagePath>Images\Fakultet sporta i fizičkog vaspitanja\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet veterinarske medicine\2.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet veterinarske medicine\3.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet veterinarske medicine\4.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet veterinarske medicine\5.jpg">
+      <PackagePath>Images\Fakultet veterinarske medicine\5.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet za fizičku hemiju\2.jpg">
+      <PackagePath>Images\Fakultet za fizičku hemiju\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fakultet za specijalnu edukaciju i rehabilitaciju\2.jpg">
+      <PackagePath>Images\Fakultet za specijalnu edukaciju i rehabilitaciju\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Farmaceutski fakultet\2.jpg">
+      <PackagePath>Images\Farmaceutski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Farmaceutski fakultet\3.jpg">
+      <PackagePath>Images\Farmaceutski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filološki fakultet\2.jpg">
+      <PackagePath>Images\Filološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.835</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filološki fakultet\3.jpg">
+      <PackagePath>Images\Filološki fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filozofski fakultet\2.jpg">
+      <PackagePath>Images\Filozofski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.841</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Filozofski fakultet\3.jpg">
+      <PackagePath>Images\Filozofski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fizički fakultet\2.jpg">
+      <PackagePath>Images\Fizički fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fizički fakultet\3.jpg">
+      <PackagePath>Images\Fizički fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Fizički fakultet\4.jpg">
+      <PackagePath>Images\Fizički fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Građevinski fakultet\2.jpg">
+      <PackagePath>Images\Građevinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Građevinski fakultet\3.jpg">
+      <PackagePath>Images\Građevinski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Hemijski fakultet\2.jpg">
+      <PackagePath>Images\Hemijski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Hemijski fakultet\3.jpg">
+      <PackagePath>Images\Hemijski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Hemijski fakultet\4.jpg">
+      <PackagePath>Images\Hemijski fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Mašinski fakultet\2.jpg">
+      <PackagePath>Images\Mašinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Mašinski fakultet\3.jpg">
+      <PackagePath>Images\Mašinski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Medicinski fakultet\2.jpg">
+      <PackagePath>Images\Medicinski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Poljoprivredni fakultet\2.jpg">
+      <PackagePath>Images\Poljoprivredni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Poljoprivredni fakultet\3.jpg">
+      <PackagePath>Images\Poljoprivredni fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Pravni fakultet\2.jpg">
+      <PackagePath>Images\Pravni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.881</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Pravoslavni bogoslovski fakultet\2.jpg">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Pravoslavni bogoslovski fakultet\3.jpg">
+      <PackagePath>Images\Pravoslavni bogoslovski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Rudarsko-geološki fakultet\2.jpg">
+      <PackagePath>Images\Rudarsko-geološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Saobraćajni fakultet\2.jpg">
+      <PackagePath>Images\Saobraćajni fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Stomatološki fakultet\2.jpg">
+      <PackagePath>Images\Stomatološki fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.922</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Tehnički fakultet u Boru\2.jpg">
+      <PackagePath>Images\Tehnički fakultet u Boru\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.925</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Tehnološko-metalurški fakultet\2.jpg">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Tehnološko-metalurški fakultet\3.jpg">
+      <PackagePath>Images\Tehnološko-metalurški fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.930</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka građevinsko-geodetska škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka građevinsko-geodetska škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka hotelijerska škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.937</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka hotelijerska škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka hotelijerska škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka inženjerska škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka inženjerska škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.954</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka tehnička škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.957</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka tehnička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka tehnička škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka tehnička škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka tekstilna strukovna škola za dizajn, tehnologiju i menadžment\1.jpg">
+      <PackagePath>Images\Visoka tekstilna strukovna škola za dizajn, tehnologiju i menadžment\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.981</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka turistička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka turistička škola strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka zdravstvena škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka zdravstvena škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.995</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola elektrotehnike i računarstva strukovnih studija\3.jpg">
+      <PackagePath>Images\Visoka škola elektrotehnike i računarstva strukovnih studija\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:30.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\1.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.001</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\2.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.005</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\3.jpg">
+      <PackagePath>Images\Visoka škola strukovnih studija za informacione i komunikacione tehnologije\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka železnička škola strukovnih studija\1.jpg">
+      <PackagePath>Images\Visoka železnička škola strukovnih studija\1.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.028</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka železnička škola strukovnih studija\2.jpg">
+      <PackagePath>Images\Visoka železnička škola strukovnih studija\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.046</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Šumarski fakultet\2.jpg">
+      <PackagePath>Images\Šumarski fakultet\2.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.051</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Šumarski fakultet\3.jpg">
+      <PackagePath>Images\Šumarski fakultet\3.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Šumarski fakultet\4.jpg">
+      <PackagePath>Images\Šumarski fakultet\4.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Šumarski fakultet\5.jpg">
+      <PackagePath>Images\Šumarski fakultet\5.jpg</PackagePath>
+      <Modified>2014-03-29T09:40:31.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka turistička škola strukovnih studija\1.gif">
+      <PackagePath>Images\Visoka turistička škola strukovnih studija\1.gif</PackagePath>
+      <Modified>2014-03-29T09:40:30.982</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Visoka zdravstvena škola strukovnih studija\1.gif">
+      <PackagePath>Images\Visoka zdravstvena škola strukovnih studija\1.gif</PackagePath>
+      <Modified>2014-03-29T09:40:30.987</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\ViewModel\aaa.txt">
+      <PackagePath>ViewModel\aaa.txt</PackagePath>
+      <Modified>2014-03-29T09:40:31.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-03-29T09:40:31.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-04-11T19:39:53.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-04-11T19:39:55.635</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

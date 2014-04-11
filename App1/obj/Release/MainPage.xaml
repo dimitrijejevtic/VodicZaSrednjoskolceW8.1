@@ -171,11 +171,11 @@
             </ItemsControl.ItemTemplate>
         </ItemsControl> -->
         <ItemsControl x:Name="navbar" Grid.Column="0" Margin="5,30,0,0">
-            <Button x:ConnectionId='17' Content="Domovi" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
-            <Button x:ConnectionId='18' Content="Fakulteti" x:Name="btnFakulteti" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
-            <Button x:ConnectionId='19' Content="Menze" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
-            <Button x:ConnectionId='20' Content="Rečnik za brucoše" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
-            <Button x:ConnectionId='21' Content="Informacije" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='18' Content="Domovi" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='19' Content="Fakulteti" x:Name="btnFakulteti" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='20' Content="Menze" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='21' Content="Rečnik za brucoše" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
+            <Button x:ConnectionId='22' Content="Informacije" Height="50" Background="Green" Margin="0,10,0,0" HorizontalAlignment="Stretch"                     />
         </ItemsControl>
         <StackPanel x:Name="content" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <StackPanel.Resources>
@@ -189,7 +189,7 @@
             </StackPanel.Resources>
 
             <Grid x:Name="spisak" Background="#FFAED6D6" Margin="10,40,0,10">
-                <ListBox x:ConnectionId='16' x:Name="list" Visibility="Collapsed" Width="300"                                          Background="Transparent" VerticalAlignment="Top" Style="{StaticResource ListBoxStyle1}">
+                <ListBox x:ConnectionId='17' x:Name="list" Visibility="Collapsed" Width="300"                                          Background="Transparent" VerticalAlignment="Top" Style="{StaticResource ListBoxStyle1}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Naziv}" TextWrapping="WrapWholeWords" />
@@ -251,7 +251,7 @@
                     </StackPanel>
                 </ScrollViewer>
 
-                <GridView x:ConnectionId='14' x:Name="FakultetigridView" Grid.Row="2" SelectionMode="Single"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" Margin="0,20,0,0">
+                <GridView x:ConnectionId='15' x:Name="FakultetigridView" Grid.Row="2" SelectionMode="Single"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" Margin="0,20,0,0">
                     <GridView.ItemTemplate>
                         <DataTemplate>
                             <Image Width="150" Height="100" Stretch="Fill" Source="{Binding Mode=OneWay}" />
@@ -262,7 +262,7 @@
                     <FlipView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <Button x:ConnectionId='15' Content="CLOSE" HorizontalAlignment="Right" Background="Red"                       />
+                                <Button x:ConnectionId='16' Content="CLOSE" HorizontalAlignment="Right" Background="Red"                       />
                                 <Image MaxWidth="1000" MaxHeight="800" Source="{Binding Mode=OneWay}"/>
                             </StackPanel>
                         </DataTemplate>
@@ -287,7 +287,7 @@
                     <TextBlock x:Name="opis" FontSize="15" TextWrapping="Wrap" Text="{Binding Opis}" MaxHeight="300" MaxWidth="700" />
                 </StackPanel>
                 <TextBlock x:Name="gsp" FontSize="16" Text="{Binding Prevoz}" Height="31" Grid.Row="1" VerticalAlignment="Bottom"/>
-                <GridView x:ConnectionId='13' x:Name="DomovigridView" Grid.Row="2" SelectionMode="None"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" >
+                <GridView x:ConnectionId='14' x:Name="DomovigridView" Grid.Row="2" SelectionMode="None"                                              ItemsSource="{Binding Images}" HorizontalAlignment="Left" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" >
                     <GridView.ItemTemplate>
                         <DataTemplate>
                             <Image Width="150" Height="100" Stretch="Fill" Source="{Binding Mode=OneWay}" />
@@ -357,7 +357,8 @@
                     <RadioButton x:ConnectionId='9' Content="Programi za studente"                              />
                     <RadioButton x:ConnectionId='10' Content="Prakse"                              />
                     <RadioButton x:ConnectionId='11' Content="Nagradni konkursi"                              />
-                    <RadioButton x:ConnectionId='12' Content="Saveti"                              />
+                    <RadioButton x:ConnectionId='12' Content="Vesti za srednjoškolce"                              />
+                    <RadioButton x:ConnectionId='13' Content="Saveti"                              />
                 </StackPanel>
             </StackPanel>
 

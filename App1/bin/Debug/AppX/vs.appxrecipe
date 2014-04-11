@@ -23,7 +23,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\bin\Debug\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2014-03-30T11:05:35.438</Modified>
+      <Modified>2014-04-11T19:31:24.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\packages\Newtonsoft.Json.6.0.1\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -178,7 +178,7 @@
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-29T09:40:30.455</Modified>
+      <Modified>2014-04-11T19:29:13.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
@@ -188,7 +188,7 @@
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-29T09:40:30.456</Modified>
+      <Modified>2014-04-11T19:29:13.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dimitrije\Documents\Visual Studio 2013\Projects\VodicZaSrednjoskolce\App1\Images\Arhitektonski fakultet\2.jpg">
       <PackagePath>Images\Arhitektonski fakultet\2.jpg</PackagePath>
